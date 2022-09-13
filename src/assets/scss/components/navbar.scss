@@ -152,11 +152,11 @@
         text-transform: uppercase;
         font-weight   : bold;
         text-align    : left;
-        color         : var(--blue);
+        color         : var(--green);
         margin-left   : rem(5);
 
         &:hover {
-            color: var(--blue_a2);
+            color: var(--green_b);
 
         }
 
@@ -165,11 +165,11 @@
             margin-left: 0;
 
             &:hover {
-                color: var(--blue);
+                color: var(--green);
 
             }
 
-            color : var(--blue_a2);
+            color : var(--green_b);
         }
     }
 }
@@ -199,13 +199,13 @@
         font-size          : 1rem;
         margin             : rem(5);
         // border-radius   : rem(5);
-        background-color   : var(--blue);
+        background-color   : var(--green);
         color              : var(--white);
         border             : 1px solid transparent;
 
         &:hover {
-            color           : var(--blue);
-            border-color    : var(--blue);
+            color           : var(--green);
+            border-color    : var(--green);
             background-color: transparent;
         }
     }

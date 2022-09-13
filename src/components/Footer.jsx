@@ -7,11 +7,11 @@ const Footer = () => {
         <div className="grid gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
           <div className="footer-item">
             <div className="flex items-center">
-              <p className="w-40">
+              <p className="mr-3">
                 <img width={50} src={logoGreen} alt="Logo" />
               </p>
-              <h3 className="mb-6 text-sm font-semibold uppercase text-gray-900">
-                Wastes Transformation
+              <h3 className="text-lg font-semibold uppercase text-gray-900">
+                W-TRANS
               </h3>
             </div>
             <p>
@@ -25,17 +25,17 @@ const Footer = () => {
               Compagnie
             </h3>
             <ul className="text-gray-500">
-              <li className="mb-4">
+              <li className="mb-3">
                 <a href="#" className="hover:underline">
                   A propos
                 </a>
               </li>
-              <li className="mb-4">
+              <li className="mb-3">
                 <a href="#" className="hover:underline">
                   Carriere
                 </a>
               </li>
-              <li className="mb-4">
+              <li className="mb-3">
                 <a href="#" className="hover:underline">
                   Actualités
                 </a>
@@ -47,25 +47,25 @@ const Footer = () => {
               Liens utiles
             </h3>
             <ul className="text-gray-500">
-              <li className="mb-4">
+              <li className="mb-3">
                 <a href="#" className="hover:underline">
                   Twitter
                 </a>
               </li>
-              <li className="mb-4">
+              <li className="mb-3">
                 <a href="#" className="hover:underline">
                   Facebook
                 </a>
               </li>
               <a href="#" className="hover:underline"></a>
-              <li className="mb-4">
+              <li className="mb-3">
                 <a href="#" className="hover:underline"></a>
                 <a href="#" className="hover:underline">
                   Instagram
                 </a>
               </li>
               <a href="#" className="hover:underline"></a>
-              <li className="mb-4">
+              <li className="mb-3">
                 <a href="#" className="hover:underline"></a>
                 <a href="#" className="hover:underline">
                   Nous contacter
@@ -78,17 +78,17 @@ const Footer = () => {
               Juridique
             </h3>
             <ul className="text-gray-500">
-              <li className="mb-4">
+              <li className="mb-3">
                 <a href="#" className="hover:underline">
                   Politique de confidentialité
                 </a>
               </li>
-              <li className="mb-4">
+              <li className="mb-3">
                 <a href="#" className="hover:underline">
                   Licence
                 </a>
               </li>
-              <li className="mb-4">
+              <li className="mb-3">
                 <a href="#" className="hover:underline">
                   Conditions
                 </a>

@@ -24,7 +24,7 @@
             height          : 45px;
             border-radius   : 25px;
             position        : absolute;
-            background-color: var(--blue);
+            background-color: var(--green);
             z-index         : -1;
 
         }
@@ -45,7 +45,7 @@
             height          : 35px;
             display         : block;
             position        : absolute;
-            background-color: var(--blue);
+            background-color: var(--green);
             z-index         : -1;
             border-radius   : 50%;
             right           : 80%;
@@ -85,7 +85,7 @@
     .title {
         strong {
 
-            color: var(--blue);
+            color: var(--green);
 
             &::first-letter {
                 text-transform: uppercase;
@@ -151,7 +151,7 @@
                     height          : 35px;
                     display         : block;
                     position        : absolute;
-                    background-color: var(--blue_a2);
+                    background-color: var(--green_b);
                     z-index         : -1;
                     border-radius   : 50%;
 

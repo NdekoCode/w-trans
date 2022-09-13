@@ -12,7 +12,7 @@
 }
 
 ::selection {
-    background-color: var(--blue_a2);
+    background-color: var(--green_b);
     color           : var(--white);
 }
 
@@ -20,7 +20,7 @@
 /* Works on Firefox */
 * {
     scrollbar-width: thin;
-    scrollbar-color: var(--blue) var(--blue_a2);
+    scrollbar-color: var(--green) var(--green_b);
 }
 
 /* Works on Chrome, Edge, and Safari */
@@ -29,13 +29,13 @@
 }
 
 *::-webkit-scrollbar-track {
-    background: var(--blue_a2);
+    background: var(--green_b);
 }
 
 *::-webkit-scrollbar-thumb {
-    background-color: var(--blue);
+    background-color: var(--green);
     border-radius   : 20px;
-    border          : 3px solid var(--blue_a2);
+    border          : 3px solid var(--green_b);
     ;
 }
 

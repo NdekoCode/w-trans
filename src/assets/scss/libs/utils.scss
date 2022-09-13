@@ -25,22 +25,22 @@
 
     &.btn-primary {
         @extend %btn-color;
-        background-color: var(--blue);
+        background-color: var(--green);
 
         &:hover {
-            color       : var(--blue);
-            border-color: var(--blue);
+            color       : var(--green);
+            border-color: var(--green);
 
         }
     }
 
     &.btn-primary-outline {
-        border-color    : var(--blue);
-        color           : var(--blue);
+        border-color    : var(--green);
+        color           : var(--green);
         background-color: var(--white_1);
 
         &:hover {
-            background-color: var(--blue);
+            background-color: var(--green);
             color           : var(--white_1);
         }
     }
@@ -87,28 +87,28 @@
 
 
 .bg-primary {
-    background-color: var(--blue);
+    background-color: var(--green);
     color           : var(--white);
 
     &:hover {
-        background-color: var(--blue_a2);
+        background-color: var(--green_b);
     }
 }
 
 .text-primary {
-    color: var(--blue);
+    color: var(--green);
 }
 
 .text-primary-dark {
-    color: var(--blue_a2);
+    color: var(--green_b);
 }
 
 .bg-primary-dark {
-    background-color: var(--blue_a2);
+    background-color: var(--green_b);
     color           : var(--white);
 
     &:hover {
-        background-color: var(--blue);
+        background-color: var(--green);
     }
 }
 
@@ -126,7 +126,7 @@
 }
 
 .bg-main-color {
-    background-color: var(--blue_a2);
+    background-color: var(--green_b);
 }
 
 .text-main-color {
@@ -180,7 +180,7 @@
 }
 
 .btn-cookie {
-    background-color: var(--blue);
+    background-color: var(--green);
 }
 
 .reveal-loaded .reveal-visible .reveal-1 {
