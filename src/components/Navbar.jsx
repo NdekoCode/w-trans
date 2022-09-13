@@ -2,6 +2,7 @@ import React from "react";
 import { useEffect } from "react";
 
 import logoGreen from "../assets/images/logo-green.svg";
+import Logo from "./Logo";
 const Navbar = () => {
   useEffect(() => {
     const humburger = document.getElementById("humburger");
@@ -21,15 +22,7 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="container">
-        <a
-          href="#"
-          className="nav-icon"
-          aria-label="visit homepage"
-          aria-current="page"
-        >
-          <img src={logoGreen} alt="Logo Wastes Transformation" />
-          <span>W-Trans</span>
-        </a>
+        <Logo />
         <div className="main-navlinks">
           <button
             className="humburger"
