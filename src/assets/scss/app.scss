@@ -1,0 +1,13 @@
+/** COMPILATION PRINCIPALE DES STYLES */
+// Les elements de base
+@import "./libs/bases";
+@import "./libs/utils";
+
+// Les composants
+@import "./components/header";
+@import "./components/navbar";
+@import "./components/hero";
+@import "./components/services";
+@import "./components/members";
+@import "./components/loader";
+@import "./components/blog";

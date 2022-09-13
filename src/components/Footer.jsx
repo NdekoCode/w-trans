@@ -6,12 +6,14 @@ const Footer = () => {
       <div className="mx-auto max-w-screen-xl p-4 py-6 md:p-8 lg:p-10 lg:py-16">
         <div className="grid gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
           <div className="footer-item">
-            <h3 className="mb-6 text-sm font-semibold uppercase text-gray-900">
-              Wastes Transformation
-            </h3>
-            <p className="w-40">
-              <img width={70} src={logoGreen} alt="Logo" />
-            </p>
+            <div className="flex items-center">
+              <p className="w-40">
+                <img width={50} src={logoGreen} alt="Logo" />
+              </p>
+              <h3 className="mb-6 text-sm font-semibold uppercase text-gray-900">
+                Wastes Transformation
+              </h3>
+            </div>
             <p>
               Wastes Transformation est une entreprise spécialisée dans le
               recyclage, nous mettons en place le paves fabriqués à base de

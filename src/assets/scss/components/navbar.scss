@@ -1,0 +1,421 @@
+.navbar {
+    position        : relative;
+    background-color: var(--white-gradient_1);
+    width           : 100%;
+    text-transform  : capitalize;
+    font-weight     : 400;
+    font-size       : rem(15);
+
+    .container {
+        position       : relative;
+        display        : flex;
+        align-items    : center;
+        justify-content: center;
+        padding-top    : rem(15);
+        padding-bottom : rem(15);
+        padding-left   : 0;
+
+    }
+
+
+    .list-item {
+        margin-bottom: 1rem;
+    }
+
+    ul {
+        display       : flex;
+        flex-direction: column;
+    }
+
+
+}
+
+.navlink {
+    display    : flex;
+    align-items: center;
+}
+
+.sign-btns {
+    display: none;
+}
+
+/** HUMBERGEUR*/
+.humburger {
+    width           : 25px;
+    height          : 25px;
+    margin-left     : rem(20);
+    cursor          : pointer;
+    border          : none;
+    display         : flex;
+    background-color: inherit;
+    align-items     : center;
+    position        : relative;
+
+    span {
+        display         : block;
+        width           : 100%;
+        height          : 2px;
+        position        : absolute;
+        background-color: var(--dark);
+        // Pour ne pas leurs cliquer dessus lors des evenements JS, car nous on voudra cliquer sur le boutton et non sur le span
+        pointer-events  : none;
+        border-radius   : 5px;
+        transition      : opacity 0.3s 0.10s ease-out;
+
+        &:last-child,
+        &:first-child {
+            transition: transform 0.3s ease-out;
+        }
+
+        &:first-child {
+            transform: translateY(-8px);
+        }
+
+        &:last-child {
+            transform: translateY(8px);
+        }
+
+    }
+
+    &.open {
+        span {
+            &:first-child {
+                transform: translate(0) rotate(135deg);
+            }
+
+            &:nth-child(2) {
+                opacity   : 0;
+                transition: opacity 0s ease-out;
+            }
+
+            &:last-child {
+                transform: translate(0) rotate(-135deg);
+            }
+        }
+    }
+}
+
+.auth-droplinks {
+    z-index: 95;
+}
+
+.navlinks-container {
+    display       : flex;
+    flex-direction: column;
+    align-items   : flex-start;
+    position      : absolute;
+    font-weight   : 500;
+    top           : 100%;
+    height        : 100vh;
+    border-right  : 1px solid var(--gray_1);
+    transform     : translateX(-100%);
+    transition    : transform 0.3s ease-out;
+    padding       : rem(15) rem(20) rem(15) rem(20);
+    min-width     : 220px;
+    z-index       : 99;
+
+
+    &.open {
+        transform : translateX(0%);
+        background: var(--white-gradient);
+    }
+}
+
+.dropdown-link {
+    svg {
+        transition: transform 0.3s;
+    }
+
+    display    : flex;
+    align-items: center;
+
+    &:hover>svg {
+        transform: rotate(180deg) !important;
+    }
+
+}
+
+.nav-icon {
+    order          : 2;
+    display        : flex;
+    align-items    : center;
+    text-decoration: none;
+    margin         : 0 auto;
+    line-height    : 0.8;
+
+    img {
+        width: 40px;
+    }
+
+    span {
+        font-size     : rem(22);
+        text-transform: uppercase;
+        font-weight   : bold;
+        text-align    : left;
+        color         : var(--blue);
+        margin-left   : rem(5);
+
+        &:hover {
+            color: var(--blue_a2);
+
+        }
+
+        span {
+            display    : block;
+            margin-left: 0;
+
+            &:hover {
+                color: var(--blue);
+
+            }
+
+            color : var(--blue_a2);
+        }
+    }
+}
+
+.nav-authentication {
+    order: 3;
+}
+
+.main-navlinks {
+    order: 1;
+}
+
+.auth-links,
+.auth-user-item {
+    cursor: pointer;
+
+    img {
+        width: rem(20);
+    }
+}
+
+
+.sign-btns {
+    a {
+        min-width          : rem(90);
+        padding            : rem(8) rem(15);
+        font-size          : 1rem;
+        margin             : rem(5);
+        // border-radius   : rem(5);
+        background-color   : var(--blue);
+        color              : var(--white);
+        border             : 1px solid transparent;
+
+        &:hover {
+            color           : var(--blue);
+            border-color    : var(--blue);
+            background-color: transparent;
+        }
+    }
+}
+
+/** DROPDOWN */
+.dropdown-parent-item {
+    position   : relative;
+    // z-index : 5;
+
+    .dropdown-list {
+        display         : none;
+        background-color: var(--white);
+        border-radius   : rem(5);
+        padding         : rem(20);
+        box-shadow      : 0 0 10px rgba(0, 0, 0, .1);
+        text-align      : left;
+        min-width       : max-content;
+
+        &:hover {
+            display: block;
+        }
+
+        a {
+            margin       : 0;
+            margin-bottom: 1rem;
+        }
+    }
+
+    a:hover+.dropdown-list {
+        display  : block;
+        animation: widthCount 0.3s ease-out forwards;
+    }
+}
+
+@media #{$sm} {
+    .nav-icon {
+
+        img {
+            width: 30px;
+        }
+
+        span {
+            font-size: rem(20);
+        }
+    }
+}
+
+@media #{$md} {
+    .dropdown-parent-item {
+        .dropdown-list {
+            display : none;
+            position: absolute;
+            top     : 100%;
+            z-index : 3;
+
+        }
+
+        a:hover+.dropdown-list {
+            animation: FadeUp 0.3s ease-out forwards;
+        }
+
+
+    }
+
+    .navbar {
+        z-index   : 25;
+        background: var(--white-gradient_1);
+        padding   : rem(8) rem(14);
+        text-align: center;
+
+        ul {
+            flex-direction: row;
+        }
+
+        .list-item {
+            margin-bottom: 0;
+        }
+
+    }
+
+    .navlinks-container {
+        position    : static;
+        border-right: none;
+        transform   : none;
+        height      : auto;
+        padding     : 0;
+
+        &.open {
+            display: none;
+        }
+
+    }
+
+    .main-navlinks,
+    .nav-authentication,
+    .nav-icon {
+        order: initial;
+
+    }
+
+    .main-navlinks {
+        margin: 0 auto;
+    }
+
+    .nav-icon {
+        margin-left : 0;
+        margin-right: rem(20);
+
+        span {
+            font-size: rem(20);
+        }
+    }
+
+    .humburger {
+        display: none;
+    }
+
+    .sign-btns {
+        display: block;
+
+        a {
+            margin       : 0 rem(10);
+            border-radius: rem(5);
+        }
+    }
+
+    .auth-links {
+        display: none;
+    }
+
+
+    .navlinks-container {
+        padding-left: 0;
+
+        a {
+            margin     : 0 rem(10);
+            font-weight: 400;
+            color      : var(--dark);
+            position   : relative;
+
+            &::after {
+                content         : "";
+                height          : rem(2);
+                width           : 100%;
+                position        : absolute;
+                bottom          : rem(0);
+                left            : 0;
+                right           : 0;
+                transform       : scale(0);
+                transition      : transform 0.3s ease-out;
+                background-color: currentColor;
+            }
+
+            &:hover {
+                &::after {
+                    transform: scaleX(1);
+                }
+            }
+        }
+
+        li {
+            &:first-child {
+                a {
+                    margin-left: 0;
+                }
+
+
+            }
+
+            &:last-child {
+                a {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+
+    .nav-authentication {
+        margin-left: auto;
+    }
+}
+
+
+
+@keyframes widthCount {
+    from {
+        visibility: hidden;
+        opacity   : 0;
+        height    : 0;
+    }
+
+    to {
+        visibility: visible;
+        opacity   : 1;
+        height    : auto;
+    }
+
+}
+
+@keyframes FadeUp {
+    from {
+        opacity  : 0;
+        transform: translateY(5px);
+
+    }
+
+    to {
+        opacity  : 1;
+        transform: translateY(0);
+    }
+
+}

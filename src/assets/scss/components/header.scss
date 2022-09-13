@@ -1,0 +1,14 @@
+.header {
+    width: 100%;
+
+    &.index {
+        min-height: 100vh;
+    }
+
+    &.news {
+        .navbar {
+            position: static;
+        }
+    }
+
+}
