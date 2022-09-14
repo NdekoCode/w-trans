@@ -1,0 +1,176 @@
+.hero {
+    --space-big: 4.5rem;
+    margin     : var(--space-block) 0;
+    margin-top : 0;
+    padding-top: 5rem;
+
+    .title {
+        line-height: 1.2;
+    }
+
+    *::before,
+    *::after,
+    .bubble {
+        opacity: 0.65;
+    }
+
+    .block-right {
+        position: relative;
+
+        &::after,
+        &::before {
+            content         : '';
+            width           : 45px;
+            height          : 45px;
+            border-radius   : 25px;
+            position        : absolute;
+            background-color: var(--green);
+            z-index         : -1;
+
+        }
+
+        &::before {
+            top : -25px;
+            left: -10px;
+        }
+
+
+        &::after {
+            bottom: -25px;
+            left  : -10px;
+        }
+
+        .bubble {
+            width           : 35px;
+            height          : 35px;
+            display         : block;
+            position        : absolute;
+            background-color: var(--green);
+            z-index         : -1;
+            border-radius   : 50%;
+            right           : 80%;
+            top             : -40px;
+
+        }
+
+        img {
+            display      : block;
+            position     : relative;
+            border-radius: rem(20);
+
+
+        }
+
+    }
+
+    .btn {
+        padding: rem(10) rem(25);
+    }
+
+    .btns-container {
+        justify-content: center;
+    }
+
+    .title-1 {
+        font-size: 2.65rem;
+    }
+
+    .container {
+        padding       : 1rem;
+        display       : flex;
+        flex-direction: column;
+        align-items   : center;
+    }
+
+    .title {
+        strong {
+
+            color: var(--green);
+
+            &::first-letter {
+                text-transform: uppercase;
+            }
+        }
+    }
+
+
+}
+
+.block-right,
+.block-left {
+    margin-bottom: var(--space-big);
+}
+
+@media #{$sml} {
+    .hero {
+        padding    : rem(20);
+        padding-top: 2.5rem;
+
+        .title-1 {
+            font-size: 4rem;
+        }
+
+        .block-right {
+            img {
+                border-radius: rem(40);
+            }
+        }
+
+        .btns-container {
+            justify-content: flex-start;
+            margin-left    : 0;
+            margin-top     : var(--space-block);
+        }
+
+
+        .container {
+            flex-direction: row;
+            padding-left  : 0;
+            padding-right : 0;
+        }
+
+        .block-right {
+            &::before {
+                top : -35px;
+                left: -15px;
+            }
+
+
+            &::after {
+                bottom: -35px;
+                left  : -15px;
+            }
+
+            .bubble {
+                border-radius: 0;
+
+                &::before,
+                &::after {
+                    content         : '';
+                    width           : 35px;
+                    height          : 35px;
+                    display         : block;
+                    position        : absolute;
+                    background-color: var(--green_b);
+                    z-index         : -1;
+                    border-radius   : 50%;
+
+                }
+
+                &::before {
+                    top  : 37px;
+                    right: -400px;
+                }
+
+                &::after {
+                    width : 25px;
+                    height: 25px;
+                    bottom: -480px;
+                    right : -400px;
+                }
+            }
+        }
+    }
+
+
+}

@@ -1,0 +1,228 @@
+@import "./variables";
+@import "./functions";
+
+/** LES STYLES DE BASE */
+*,
+*::before,
+*::after {
+    margin    : 0;
+    padding   : 0;
+    box-sizing: border-box;
+    transition: color 0.3s, background-color 0.3s, opacity 0.3s;
+    font-size : 14px;
+
+    // Scrollbar
+    /* Works on Firefox */
+    scrollbar-width: thin;
+    scrollbar-color: var(--green) var(--green_b);
+}
+
+::selection {
+    background-color: var(--green_b);
+    color           : var(--white);
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 15px;
+}
+
+*::-webkit-scrollbar-track {
+    background: var(--green_b);
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: var(--green);
+    border-radius   : 20px;
+    border          : 3px solid var(--green_b);
+    ;
+}
+
+body,
+html {
+    font-family: var(--ff-primary);
+    font-size  : 14px;
+}
+
+html {
+    scroll-behavior: smooth;
+
+}
+
+body {
+    overflow-x: hidden;
+    background: var(--white-gradient_1);
+}
+
+a {
+    font-family: var(--ff-link);
+}
+
+img {
+    object-fit: cover;
+}
+
+.logo {
+    display: inline-block;
+    height : 50px;
+
+    img {
+        height: 50px;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.title,
+strong {
+    font-family: var(--ff-title);
+    font-weight: 700;
+}
+
+.title {
+    margin: 0.8rem 0;
+
+}
+
+h1,
+.title-1 {
+    font-size: 2.8rem;
+}
+
+h2,
+.title-2 {
+    font-size: 2.5rem;
+}
+
+h3,
+.title-3 {
+    font-size: 2.2rem;
+}
+
+h4,
+.title-4 {
+    font-size: 1.9rem;
+}
+
+h5,
+.title-5 {
+    font-size: 1.6rem;
+}
+
+h6,
+.title-6 {
+    font-size: 1rem;
+}
+
+p {
+    margin: 0.8rem 0;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.container {
+    padding: 0 rem(20);
+
+    @media (min-width: 640px) {
+        max-width: 100%;
+    }
+
+    @media (min-width: 768px) {
+        max-width: 100%;
+    }
+}
+
+.block-right,
+.block-left {
+    min-width: 250px;
+    width    : 100%;
+}
+
+.title {
+    line-height: 1.3;
+}
+
+@media only screen and (min-width: 992px) {
+    .container {
+        max-width   : 1080px;
+        margin-left : auto;
+        margin-right: auto;
+    }
+
+    // .navbar {
+    //     .container {
+    //         padding-left : 0;
+    //         padding-right: 0;
+    //     }
+    // }
+}
+
+@media #{$xs} {
+
+    h1,
+    .title-1 {
+        font-size: 3.5rem;
+    }
+
+    h2,
+    .title-2 {
+        font-size: 3rem;
+    }
+
+    h3,
+    .title-3 {
+        font-size: 2.5rem;
+    }
+
+    h4,
+    .title-4 {
+        font-size: 2rem;
+    }
+
+    h5,
+    .title-5 {
+        font-size: 1.5rem;
+    }
+
+    h6,
+    .title-6 {
+        font-size: 1rem;
+    }
+}
+
+#auth-menu {
+    transition: color 0.1s;
+
+    &:hover,
+    &:focus {
+        color: var(--white);
+
+    }
+
+    button,
+    a,
+    form {
+        padding   : 5px !important;
+        text-align: center;
+    }
+
+    a {
+        display: block !important;
+    }
+
+
+    .auth-id {
+
+        display: none;
+
+        @media #{$xxs} {
+            display: inline-block;
+        }
+    }
+}

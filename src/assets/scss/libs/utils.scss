@@ -1,0 +1,307 @@
+/**
+    Les styles utiles dans toutes l'application
+
+*/
+%btn {
+    padding      : rem(12) rem(15);
+    border-radius: rem(5);
+    background   : var(--gray_1);
+    color        : var(--dark);
+    border       : 1px solid transparent;
+    margin       : rem(5);
+
+}
+
+%btn-color {
+    color: var(--white_1);
+
+    &:hover {
+        background-color: var(--white_1);
+    }
+}
+
+.btn {
+    @extend %btn;
+
+    &.btn-primary {
+        @extend %btn-color;
+        background-color: var(--green);
+
+        &:hover {
+            color       : var(--green);
+            border-color: var(--green);
+
+        }
+    }
+
+    &.btn-primary-outline {
+        border-color    : var(--green);
+        color           : var(--green);
+        background-color: var(--white_1);
+
+        &:hover {
+            background-color: var(--green);
+            color           : var(--white_1);
+        }
+    }
+
+    &.btn-secondary {
+        @extend %btn-color;
+        background-color: var(--dark);
+
+        &:hover {
+            color       : var(--dark);
+            border-color: var(--dark);
+
+        }
+
+    }
+
+    &.btn-secondary-outline {
+        color           : var(--dark);
+        border-color    : var(--dark);
+        background-color: var(--white_1);
+
+        &:hover {
+            background-color: var(--dark);
+            color           : var(--white_1);
+        }
+
+    }
+}
+
+.blog {
+    margin: 4rem 0;
+
+    .blog-item {
+        flex-direction: column;
+        min-height    : 350px;
+
+        .learn-btn,
+        footer {
+            margin-top: auto;
+        }
+
+    }
+}
+
+
+.bg-primary {
+    background-color: var(--green);
+    color           : var(--white);
+
+    &:hover {
+        background-color: var(--green_b);
+    }
+}
+
+.text-primary {
+    color: var(--green);
+}
+
+.text-primary-dark {
+    color: var(--green_b);
+}
+
+.bg-primary-dark {
+    background-color: var(--green_b);
+    color           : var(--white);
+
+    &:hover {
+        background-color: var(--green);
+    }
+}
+
+.block-right {
+    img {
+        border-radius: rem(20);
+    }
+}
+
+.btns-container {
+    margin   : var(--equal-space);
+    display  : flex;
+    flex-wrap: wrap;
+
+}
+
+.bg-main-color {
+    background-color: var(--green_b);
+}
+
+.text-main-color {
+    color: var(--main-color);
+}
+
+.border-main-color {
+    border-color: var(--main-color);
+}
+
+%card {
+    min-width    : 250px;
+    min-height   : 300px;
+    min-height   : 300px;
+    width        : 100%;
+    height       : 100%;
+    margin-bottom: var(--equal-space);
+    box-shadow   : 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* -----------------APPARITION AU DEFILEMENT ----------------- */
+/* CETTE ANIMATION SERA JOUER UNIQUEMENT LORSQUE L'element HTML <html> aura la classe ".reveal-loaded " */
+/* Tous les element qui sont dans .reveal et qui on une classe .reveal-[quelque chose] */
+.reveal-loaded .reveal [class *="reveal-"] {
+    opacity   : 0;
+    /* Les elements vont apparaitre depuis le bas */
+    transform : translateY(30px);
+    transition: 0s !important;
+}
+
+/* Tous les element qui sont dans .reveal-visible et qui on une classe .reveal-[quelque chose] */
+.reveal-loaded .reveal-visible [class *="reveal-"] {
+    opacity   : 1;
+    transform : translateY(0);
+    transition: opacity 1s cubic-bezier(.5, 0, 0, 1), transform 1s cubic-bezier(.5, 0, 0, 1);
+    ;
+}
+
+.img-response {
+    display   : block;
+    object-fit: cover;
+    width     : 100%;
+    height    : 100%;
+    margin    : 0 auto;
+
+}
+
+%mx-auto {
+    margin-left : auto;
+    margin-right: auto;
+}
+
+.btn-cookie {
+    background-color: var(--green);
+}
+
+.reveal-loaded .reveal-visible .reveal-1 {
+    transition-delay: 0.3s;
+}
+
+.reveal-loaded .reveal-visible .reveal-2 {
+    transition-delay: 0.4s;
+}
+
+
+.reveal-loaded .reveal-visible .reveal-3 {
+    transition-delay: 0.5s;
+}
+
+.reveal-loaded .reveal-visible .reveal-4 {
+    transition-delay: 0.6s;
+}
+
+.reveal-loaded .reveal-visible .reveal-5 {
+    transition-delay: 0.7s;
+}
+
+@media #{$xs} {
+    .section {
+        padding: var(--equal-space);
+    }
+
+}
+
+@media #{$sml} {
+    .section {
+        padding: var(--space-block);
+    }
+
+    .block-right {
+        img {
+            border-radius: rem(40);
+        }
+    }
+
+    %card {
+        min-height: 350px;
+    }
+}
+
+.alert {
+    width    : 100%;
+    margin   : 5px;
+    padding  : 15px;
+    font-size: 15px !important;
+    position : relative;
+
+    &.is-inactive {
+        animation: fadeElement 0.3s linear forwards;
+        display  : none;
+    }
+
+}
+
+.alert-box {
+    background: #036;
+    color     : #fff;
+
+}
+
+.z-over-content {
+    z-index: 95 !important;
+}
+
+.check-list {
+    margin      : 0;
+    padding-left: 1.2rem;
+}
+
+// Liste à puce
+.check-list {
+    li {
+        position       : relative;
+        list-style-type: none;
+        padding-left   : 2.5rem;
+        margin-bottom  : 0.5rem;
+
+        &::before {
+            content         : '';
+            display         : block;
+            position        : absolute;
+            left            : 0;
+            top             : -2px;
+            width           : 5px;
+            height          : 11px;
+            border-width    : 0 2px 2px 0;
+            border-style    : solid;
+            border-color    : #00a8a8;
+            transform-origin: bottom left;
+            transform       : rotate(45deg);
+        }
+    }
+}
+
+
+
+@media #{$md} {
+
+    %card {
+        margin-bottom: 0;
+    }
+
+}
+
+@keyframes animate {
+    0% {
+        transform    : translateY(0) rotate(0deg);
+        opacity      : 1;
+        border-radius: 0;
+    }
+
+    100% {
+        transform    : translateY(-1000px) rotate(720deg);
+        opacity      : 0;
+        border-radius: 50%;
+    }
+
+}

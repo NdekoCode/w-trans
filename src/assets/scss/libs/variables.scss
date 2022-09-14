@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&family=Poppins:ital,wght@0,500;0,600;0,700;0,900;1,500;1,700&display=swap');
+
+@font-face {
+    font-family : 'Proxima Nova';
+    src         : url('/fonts/Proxima-Nova/ProximaNovaT-Thin.ttf') format('truetype');
+    font-weight : 100;
+    font-style  : normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family : 'Proxima Nova';
+    src         : url('/fonts/Proxima-Nova/ProximaNovaA-Light.ttf') format('truetype');
+    font-weight : 300;
+    font-style  : normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family : 'Proxima Nova';
+    src         : url('/fonts/Proxima-Nova/ProximaNova-Regular.ttf') format('truetype');
+    font-weight : 400;
+    font-style  : normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family : 'Proxima Nova';
+    src         : url('/fonts/Proxima-Nova/ProximaNova-Bold.ttf') format('truetype');
+    font-weight : 700;
+    font-style  : normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family : 'Proxima Nova';
+    src         : url('/fonts/Proxima-Nova/ProximaNova-Extrabld.ttf') format('truetype');
+    font-weight : 800;
+    font-style  : normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family : 'Proxima Nova';
+    src         : url('/fonts/Proxima-Nova/ProximaNova-Black.ttf') format('truetype');
+    font-weight : 900;
+    font-style  : normal;
+    font-display: swap;
+}
+
+/**
+Les variables utiliser dans l'application
+*/
+/** MEDIA QUERIES */
+$size-xxs  : 320 !default;
+$size-xs   :480 !default;
+$size-sm   :576 !default;
+$size-sml  :768 !default;
+$size-md-sm: 880 !default;
+$size-md   :992 !default;
+$size-lg   :1281 !default;
+$size-xl   :1400 !default;
+$xxs       :"only screen and (min-width: #{$size-xxs}px)";
+$xs        :"only screen and (min-width: #{$size-xs}px)";
+$sm        :"only screen and (min-width: #{$size-sm}px)";
+$sml       :"only screen and (min-width: #{$size-sml}px)";
+$md        :"only screen and (min-width: #{$size-md}px)";
+$md-sm     :"only screen and (min-width: #{$size-md-sm}px)";
+$lg        :"only screen and (min-width: #{$size-lg}px)";
+$xl        :"only screen and (min-width: #{$size-xl}px)";
+
+// Fonts & Typography
+$main-font : 'Proxima Nova',
+'Segoe UI',
+sans-serif;
+$letterDim   : 40px;
+$letterSize  : 2em;
+$letterEasing: ease-in;
+$letterSpeed : 8s;
+
+// Colors
+$white: #fff;
+$black: #123;
+$palette: #0061dc,
+#33A753,
+#FABB04,
+rgb(149, 149, 150);
+
+// Loader Settings
+$dim      : 20rem;
+$fadeStart: .1;
+$fadeEnd  : 1;
+$speed    : 4s;
+$easing   : ease-out;
+$type     : normal; //normal / reverse / alternate / alternate-reverse
+
+// Typographie
+:root {
+    --ff-primary: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+    --ff-link   : 'Proxima Nova', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI';
+    --ff-title  : "Poppins", 'Segoe UI', Ubuntu, serif;
+
+    // COLOR
+    --green  : #53C351;
+    --green_b: #254330;
+
+    --dark      : #123;
+    --main-color: #4a76a8;
+    --gray      : #EBEBEB;
+    --textGray  : #E6E6E6;
+
+    --white           : rgb(255, 255, 255);
+    --white_1         : rgb(250, 250, 250);
+    --gray_1          : rgb(197, 197, 198);
+    --white-gradient  : linear-gradient(45deg, var(--white) 45%, var(--white_1)) no-repeat center center /cover;
+    --white-gradient_1: linear-gradient(45deg, var(--white_1)45%, var(--white)) no-repeat center center /cover;
+    --gradient-gray   : linear-gradient(45deg, var(--gray_1)45%, var(--white_1)) no-repeat center center /cover;
+
+
+    /** SPACES */
+    --space-block: 2rem;
+    --space-big  : 3rem;
+    --equal-space: 1rem;
+}
