@@ -1,5 +1,5 @@
 import React from "react";
-import logoGreen from "../assets/images/logo-green.svg";
+import logoGreen from "../assets/images/icons/logo-green.svg";
 const Footer = () => {
   return (
     <footer className="bg-white">
