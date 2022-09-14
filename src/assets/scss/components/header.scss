@@ -1,8 +1,9 @@
 .header {
     width: 100%;
 
-    &.index {
-        min-height: 100vh;
+    &.index,
+    &.topbar {
+        min-height: 800px;
     }
 
     &.news {
@@ -10,5 +11,41 @@
             position: static;
         }
     }
+
+}
+
+.topbar {
+    background-image: var(--green-linear);
+}
+
+@media #{$sml} {
+
+    .header.topbar {
+        background               : var(--green_b);
+        border-bottom-left-radius: 80px;
+
+        p {
+            color: var(--text-light);
+        }
+
+        .title {
+            color: var(--white);
+        }
+
+        .navbar,
+        .hero,
+        .navlinks-container {
+
+            background: var(--green_b);
+        }
+
+        .navlinks-container {
+            .navlink {
+                color: var(--white)
+            }
+
+        }
+    }
+
 
 }

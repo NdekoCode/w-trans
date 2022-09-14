@@ -3,12 +3,11 @@
 
 */
 %btn {
-    padding      : rem(12) rem(15);
+    padding      : rem(12) rem(40);
     border-radius: rem(5);
     background   : var(--gray_1);
     color        : var(--dark);
     border       : 1px solid transparent;
-    margin       : rem(5);
 
 }
 
@@ -45,6 +44,7 @@
         }
     }
 
+
     &.btn-secondary {
         @extend %btn-color;
         background-color: var(--dark);
@@ -66,6 +66,19 @@
             background-color: var(--dark);
             color           : var(--white_1);
         }
+
+    }
+}
+
+.btn-icon {
+    @extend %btn;
+    display    : flex;
+    align-items: center;
+    flex-wrap  : nowrap;
+
+    img {
+        max-width: max-content;
+        margin   : 0 5px;
 
     }
 }
@@ -112,11 +125,6 @@
     }
 }
 
-.block-right {
-    img {
-        border-radius: rem(20);
-    }
-}
 
 .btns-container {
     margin   : var(--equal-space);
@@ -214,12 +222,6 @@
 @media #{$sml} {
     .section {
         padding: var(--space-block);
-    }
-
-    .block-right {
-        img {
-            border-radius: rem(40);
-        }
     }
 
     %card {

@@ -156,8 +156,16 @@
         color         : var(--green);
         margin-left   : rem(5);
 
+        @media #{$sml} {
+            color: var(--white);
+        }
+
         &:hover {
             color: var(--green_b);
+
+            @media #{$sml} {
+                color: var(--green);
+            }
 
         }
 
