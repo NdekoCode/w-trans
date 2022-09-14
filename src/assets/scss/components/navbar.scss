@@ -113,12 +113,13 @@
     padding       : rem(15) rem(20) rem(15) rem(20);
     min-width     : 220px;
     z-index       : 99;
-
+    background    : var(--white-gradient_1);
+    ;
 
     &.open {
-        transform : translateX(0%);
-        background: var(--white-gradient);
+        transform: translateX(0%);
     }
+
 }
 
 .dropdown-link {
@@ -195,7 +196,7 @@
 .sign-btns {
     a {
         min-width          : rem(90);
-        padding            : rem(8) rem(15);
+        padding            : rem(12) rem(15);
         font-size          : 1rem;
         margin             : rem(5);
         // border-radius   : rem(5);
@@ -254,7 +255,37 @@
     }
 }
 
-@media #{$md} {
+
+@keyframes widthCount {
+    from {
+        visibility: hidden;
+        opacity   : 0;
+        height    : 0;
+    }
+
+    to {
+        visibility: visible;
+        opacity   : 1;
+        height    : auto;
+    }
+
+}
+
+@keyframes FadeUp {
+    from {
+        opacity  : 0;
+        transform: translateY(5px);
+
+    }
+
+    to {
+        opacity  : 1;
+        transform: translateY(0);
+    }
+
+}
+
+@media #{$sml} {
     .dropdown-parent-item {
         .dropdown-list {
             display : none;
@@ -287,18 +318,6 @@
 
     }
 
-    .navlinks-container {
-        position    : static;
-        border-right: none;
-        transform   : none;
-        height      : auto;
-        padding     : 0;
-
-        &.open {
-            display: none;
-        }
-
-    }
 
     .main-navlinks,
     .nav-authentication,
@@ -337,8 +356,18 @@
         display: none;
     }
 
-
     .navlinks-container {
+        position        : static;
+        border-right    : none;
+        transform       : none;
+        height          : auto;
+        padding         : 0;
+        background-color: transparent;
+
+        &.open {
+            display: none;
+        }
+
         padding-left: 0;
 
         a {
@@ -387,35 +416,4 @@
     .nav-authentication {
         margin-left: auto;
     }
-}
-
-
-
-@keyframes widthCount {
-    from {
-        visibility: hidden;
-        opacity   : 0;
-        height    : 0;
-    }
-
-    to {
-        visibility: visible;
-        opacity   : 1;
-        height    : auto;
-    }
-
-}
-
-@keyframes FadeUp {
-    from {
-        opacity  : 0;
-        transform: translateY(5px);
-
-    }
-
-    to {
-        opacity  : 1;
-        transform: translateY(0);
-    }
-
 }

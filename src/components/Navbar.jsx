@@ -1,31 +1,48 @@
 import React from "react";
+import { useCallback } from "react";
+import { useState } from "react";
 import { useEffect } from "react";
 
-import logoGreen from "../assets/images/logo-green.svg";
 import Logo from "./Logo";
 const Navbar = () => {
+  const [toggleMenu, setToggleMenu] = useState({
+    className: "humburger",
+    open: false,
+  });
+  const toggleButton = useCallback(({ target }) => {
+    const mobileMenu = document.querySelector(".navlinks-container");
+    const aria =
+      target.getAttribute("aria-expanded") === "true" ? "false" : "true";
+    target.setAttribute("aria-expanded", aria);
+    mobileMenu.classList.toggle("open");
+    target.classList.toggle("open");
+
+    console.log(mobileMenu);
+    console.log(target);
+    new ResizeObserver((entries) => {
+      if (entries[0].contentRect.width <= 900) {
+        if (mobileMenu !== null) {
+          mobileMenu.style.transition = "transform 0.3s ease-out";
+        }
+      } else {
+        if (mobileMenu !== null) {
+          mobileMenu.style.transition = "none";
+        }
+      }
+    }).observe(document.body);
+  });
   useEffect(() => {
     const humburger = document.getElementById("humburger");
-    const mobileMenu = document.querySelector(".navlinks-container");
-    if (humburger !== null && mobileMenu !== null) {
-      humburger.addEventListener("click", function () {
-        console.log(this);
-        this.classList.toggle("open");
-
-        const aria =
-          this.getAttribute("aria-expanded") === "true" ? "false" : "true";
-        this.setAttribute("aria-expanded", aria);
-        mobileMenu.classList.toggle("open");
-      });
-    }
-  });
+    console.log(humburger);
+  }, [toggleMenu]);
   return (
     <nav className="navbar">
       <div className="container">
         <Logo />
         <div className="main-navlinks">
           <button
-            className="humburger"
+            onClick={toggleButton}
+            className={toggleMenu.className}
             id="humburger"
             type="button"
             aria-label="Toggle navigation"

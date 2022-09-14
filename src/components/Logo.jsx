@@ -1,4 +1,5 @@
 import React from "react";
+import logoGreen from "../assets/images/logo-green.svg";
 
 const Logo = () => {
   return (

@@ -1,14 +1,3 @@
-new ResizeObserver((entries) => {
-  if (entries[0].contentRect.width <= 900) {
-    if (mobileMenu !== null) {
-      mobileMenu.style.transition = "transform 0.3s ease-out";
-    }
-  } else {
-    if (mobileMenu !== null) {
-      mobileMenu.style.transition = "none";
-    }
-  }
-}).observe(document.body);
 // Quand le DOM entier sera charger execute moi cette fonction
 window.addEventListener("DOMContentLoaded", function () {
   const preload = document.querySelector(".preloader");

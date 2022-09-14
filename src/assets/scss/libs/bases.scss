@@ -9,18 +9,17 @@
     padding   : 0;
     box-sizing: border-box;
     transition: color 0.3s, background-color 0.3s, opacity 0.3s;
+    font-size : 14px;
+
+    // Scrollbar
+    /* Works on Firefox */
+    scrollbar-width: thin;
+    scrollbar-color: var(--green) var(--green_b);
 }
 
 ::selection {
     background-color: var(--green_b);
     color           : var(--white);
-}
-
-// Scrollbar
-/* Works on Firefox */
-* {
-    scrollbar-width: thin;
-    scrollbar-color: var(--green) var(--green_b);
 }
 
 /* Works on Chrome, Edge, and Safari */
@@ -42,7 +41,7 @@
 body,
 html {
     font-family: var(--ff-primary);
-    font-size  : 15px;
+    font-size  : 14px;
 }
 
 html {
