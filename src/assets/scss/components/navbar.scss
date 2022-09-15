@@ -156,8 +156,16 @@
         color         : var(--green);
         margin-left   : rem(5);
 
+        @media #{$sml} {
+            color: var(--white);
+        }
+
         &:hover {
             color: var(--green_b);
+
+            @media #{$sml} {
+                color: var(--green);
+            }
 
         }
 
@@ -188,7 +196,7 @@
     cursor: pointer;
 
     img {
-        width: rem(20);
+        width: rem(35);
     }
 }
 
@@ -378,18 +386,19 @@
 
             &::after {
                 content         : "";
-                height          : rem(2);
+                height          : rem(3);
                 width           : 100%;
                 position        : absolute;
-                bottom          : rem(0);
+                bottom          : -0.5rem;
                 left            : 0;
                 right           : 0;
                 transform       : scale(0);
                 transition      : transform 0.3s ease-out;
-                background-color: currentColor;
+                background-color: var(--green);
             }
 
-            &:hover {
+            &:hover,
+            &.active {
                 &::after {
                     transform: scaleX(1);
                 }

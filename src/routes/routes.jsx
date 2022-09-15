@@ -3,7 +3,7 @@ import { Suspense } from "react";
 import LoadingPage from "../components/LoadingPage";
 import About from "../pages/About";
 import Cards from "../pages/Cards";
-import Contact from "../pages/Contact";
+const Contact = lazy(() => import("../pages/Contact"));
 const Home = lazy(() => import("../pages/Home"));
 import Login from "../pages/Login";
 import News from "../pages/News";
@@ -47,7 +47,7 @@ const routes = [
   },
   {
     path: "/login",
-    path: "Se connecter",
+    name: "Se connecter",
     element: <Login />,
   },
   {
@@ -55,7 +55,7 @@ const routes = [
     element: <News />,
   },
 ];
-export const navrouter = [
+export const navbarRouter = [
   {
     path: "/",
     name: "Acceuil",
@@ -71,8 +71,8 @@ export const navrouter = [
     element: <About />,
   },
   {
-    path: "Projet",
-    name: "Partenaires",
+    path: "/projets",
+    name: "Projet",
     element: <Project />,
   },
   {
@@ -80,19 +80,21 @@ export const navrouter = [
     name: "Services",
     element: <Services />,
     children: [
-      { path: "/", name: "Ventes pavés", element: <Cards /> },
-      { path: "/", name: "Assainissement", element: <Cards /> },
+      {
+        path: "/services/recyclage",
+        name: "Recyclage",
+        element: <Project />,
+      },
+      {
+        path: "/services/assainissement",
+        name: "Assainissement",
+      },
     ],
   },
   {
     path: "/contact",
     name: "Contact",
     element: <Contact />,
-  },
-  {
-    path: "/login",
-    path: "Se connecter",
-    element: <Login />,
   },
   {
     path: "Actualités",

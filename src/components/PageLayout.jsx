@@ -2,7 +2,7 @@ import React from "react";
 import Footer from "./Footer";
 import Navbar from "./Navbar";
 
-const PageLayout = ({ children }) => {
+const PageLayout = ({ children, header }) => {
   return (
     <>
       <Navbar />

@@ -1,11 +1,14 @@
 import React from "react";
-import PageLayout from "../components/PageLayout";
+import Footer from "../components/Footer";
+import HeaderHome from "../components/HeaderHome";
 
 const Home = () => {
   return (
-    <PageLayout>
-      <h1>Page d'acceuil</h1>
-    </PageLayout>
+    <>
+      <HeaderHome />
+      <main></main>
+      <Footer />
+    </>
   );
 };
 

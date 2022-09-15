@@ -2,8 +2,11 @@ import React from "react";
 import { useCallback } from "react";
 import { useState } from "react";
 import { useEffect } from "react";
-
+import { NavLink } from "react-router-dom";
+import { navbarRouter } from "../routes/routes";
+import imgUser from "../assets/images/icons/user-light.svg";
 import Logo from "./Logo";
+import SubLinks from "./SubLinks";
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState({
     className: "humburger",
@@ -53,68 +56,32 @@ const Navbar = () => {
             <span />
           </button>
           <ul className="navlinks-container">
-            <li className="list-item">
-              <a className="navlink" href="#" aria-current="page">
-                Acceuil
-              </a>
-            </li>
-            <li className="dropdown-parent-item list-item">
-              <a className="navlink" href="#" aria-current="page">
-                A propos
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlnsXlink="http://www.w3.org/1999/xlink"
-                  aria-hidden="true"
-                  focusable="false"
-                  width="1em"
-                  height="1em"
-                  preserveAspectRatio="xMidYMid meet"
-                  viewBox="0 0 20 20"
-                  className="iconify"
-                  data-icon="dashicons:arrow-down-alt2"
-                  style={{
-                    verticalAlign: "-0.125em",
-                    transform: "rotate(360deg)",
-                  }}
-                >
-                  <path fill="currentColor" d="m5 6l5 5l5-5l2 1l-7 7l-7-7z" />
-                </svg>
-              </a>
-              <ul className="dropdown-list">
-                <li>
-                  <a href="#">Offre d'emplois</a>
-                </li>
-                <li>
-                  <a href="#">Appel d'offre</a>
-                </li>
-              </ul>
-            </li>
-            <li className="list-item">
-              <a className="navlink" href="#" aria-current="page">
-                Projets
-              </a>
-            </li>
-            <li className="list-item">
-              <a className="navlink" href="#" aria-current="page">
-                Services
-              </a>
-            </li>
-            <li className="list-item">
-              <a className="navlink" href="#" aria-current="page">
-                Actualités
-              </a>
-            </li>
-            <li className="list-item">
-              <a className="navlink" href="#" aria-current="page">
-                Contact
-              </a>
-            </li>
+            {navbarRouter.map(({ path, name, children }, index) => {
+              if (children !== undefined && children.length > 0) {
+                return (
+                  <SubLinks key={index} name={name} childLinks={children} />
+                );
+              } else {
+                return (
+                  <li className="list-item" key={index}>
+                    <NavLink
+                      to={path}
+                      className="navlink"
+                      href="#"
+                      aria-current="page"
+                    >
+                      {name}
+                    </NavLink>
+                  </li>
+                );
+              }
+            })}
           </ul>
         </div>
         <ul className="nav-authentication">
           <li className="auth-links">
             <a href="#" className="user-auth" aria-label="Se connecter">
-              <img src="" alt="user-icon" />
+              <img src={imgUser} alt="user-icon" />
             </a>
           </li>
           <li className="sign-btns">

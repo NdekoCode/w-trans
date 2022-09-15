@@ -22,6 +22,14 @@
     color           : var(--white);
 }
 
+@media #{$sml} {
+
+    ::selection {
+        background-color: var(--white);
+        color           : var(--green_b);
+    }
+}
+
 /* Works on Chrome, Edge, and Safari */
 *::-webkit-scrollbar {
     width: 15px;
@@ -54,8 +62,10 @@ body {
     background: var(--white-gradient_1);
 }
 
-a {
+a,
+.btn-link {
     font-family: var(--ff-link);
+    color      : var(--green);
 }
 
 img {
@@ -120,6 +130,7 @@ h6,
 
 p {
     margin: 0.8rem 0;
+    color : var(--text-dark);
 
     &:last-child {
         margin-bottom: 0;
