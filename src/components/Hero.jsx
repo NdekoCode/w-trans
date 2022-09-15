@@ -1,5 +1,8 @@
 import React from "react";
-
+import playBtn from "../assets/images/icons/play.svg";
+import img1 from "../assets/images/image-1.jpg";
+import img2 from "../assets/images/image-2.jpeg";
+import img3 from "../assets/images/image-3.jpeg";
 const Hero = () => {
   return (
     <div className="hero">
@@ -28,9 +31,24 @@ const Hero = () => {
         </div>
         <div className="block-right">
           <div className="hero__circle">
-            <div className="circle-hero circle-1"></div>
-            <div className="circle-hero circle-2"></div>
-            <div className="circle-hero circle-3"></div>
+            <div
+              className="circle-hero bg-cover bg-center circle-1"
+              style={{
+                backgroundImage: `linear-gradient(45deg, rgba(0,0,0,0.2) 15%, rgba(0,0,0,0.4)),url(${img1})`,
+              }}
+            ></div>
+            <div
+              className="circle-hero bg-cover bg-center circle-2"
+              style={{
+                backgroundImage: `linear-gradient(45deg, rgba(0,0,0,0.2) 15%, rgba(0,0,0,0.4)),url(${img2})`,
+              }}
+            ></div>
+            <div
+              className="circle-hero bg-cover bg-center circle-3"
+              style={{
+                backgroundImage: `linear-gradient(45deg, rgba(0,0,0,0.2) 15%, rgba(0,0,0,0.4)),url(${img3})`,
+              }}
+            ></div>
           </div>
         </div>
       </div>

@@ -25,9 +25,10 @@ const OurValues = () => {
       <div className="container">
         {values.map(({ title, content, image }, index) => (
           <div className="value" key={index}>
-            <div className="value__infos" data-count={`0${index}`}>
+            <div className="value__infos">
               <h2 className="title title-2">{title}</h2>
               <p>{content}</p>
+              <div className="position">{`0${index + 1}`}</div>
             </div>
             <div
               className="value__image bg-cover bg-center"
