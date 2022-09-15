@@ -10,7 +10,7 @@ const HeaderHome = () => {
         <div className="container block-content">
           <div className="block-left">
             <h1 className="title">
-              Nous sommes spécialisée dans le recyclage ☘️
+              Nous sommes spécialisé dans le recyclage ☘️
             </h1>
             <div>
               <p>
