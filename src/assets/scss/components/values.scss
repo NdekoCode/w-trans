@@ -1,0 +1,18 @@
+.our-values {
+    position: relative;
+
+    .position {
+        position: absolute;
+        top     : 0;
+        right   : 0;
+        z-index : -1;
+        color   : var(--text-dark);
+
+    }
+
+    .value__image {
+        min-height      : 250px;
+        width           : 100%;
+        background-color: var(--gray);
+    }
+}
