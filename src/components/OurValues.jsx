@@ -21,7 +21,7 @@ const OurValues = () => {
     },
   ]);
   return (
-    <section className="our-values container" id="our-values">
+    <section className="our-values container section" id="our-values">
       {values.map(({ title, content, image }, index) => (
         <div className="value">
           <div className="value__infos">

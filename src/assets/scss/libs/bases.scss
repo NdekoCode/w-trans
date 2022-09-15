@@ -65,7 +65,14 @@ body {
 a,
 .btn-link {
     font-family: var(--ff-link);
-    color      : var(--green);
+    color      : inherit;
+}
+
+main {
+
+    a {
+        color: var(--green);
+    }
 }
 
 img {

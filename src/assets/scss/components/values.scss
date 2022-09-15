@@ -12,7 +12,18 @@
 
     .value__image {
         min-height      : 250px;
+        max-height      : 400px;
         width           : 100%;
         background-color: var(--gray);
+        border-radius   : 16px;
+        overflow        : hidden;
+    }
+}
+
+.value__infos {
+    padding-bottom: 40px;
+
+    .title {
+        margin-bottom: 24px;
     }
 }
