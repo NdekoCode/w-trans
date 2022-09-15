@@ -70,9 +70,12 @@ a,
 }
 
 main {
-
     a {
         color: var(--green);
+    }
+
+    .title {
+        color: var(--text-title);
     }
 }
 

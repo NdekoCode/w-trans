@@ -21,18 +21,24 @@ const OurValues = () => {
     },
   ]);
   return (
-    <section className="our-values container section" id="our-values">
-      {values.map(({ title, content, image }, index) => (
-        <div className="value">
-          <div className="value__infos">
-            <h2 className="title title-2">{title}</h2>
-            <p>{content}</p>
+    <section className="our-values section" id="our-values">
+      <div className="container">
+        {values.map(({ title, content, image }, index) => (
+          <div className="value" key={index}>
+            <div className="value__infos">
+              <h2 className="title title-2">{title}</h2>
+              <p>{content}</p>
+            </div>
+            <div
+              className="value__image bg-cover bg-center"
+              style={{ backgroundImage: `url(${image})` }}
+            ></div>
+            <a href="#" className="block btn-link my-10">
+              En savoir plus
+            </a>
           </div>
-          <div className="value__image">
-            <img src={image} alt={title} />
-          </div>
-        </div>
-      ))}
+        ))}
+      </div>
     </section>
   );
 };

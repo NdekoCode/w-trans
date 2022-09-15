@@ -83,6 +83,11 @@
     }
 }
 
+.btn-link {
+    color      : var(--green);
+    font-weight: 500;
+}
+
 .blog {
     margin: 4rem 0;
 
@@ -212,17 +217,11 @@
     transition-delay: 0.7s;
 }
 
-@media #{$xs} {
-    .section {
-        padding: var(--equal-space);
-    }
-
+.section {
+    padding: var(--space-block) 0;
 }
 
 @media #{$sml} {
-    .section {
-        padding: var(--space-block);
-    }
 
     %card {
         min-height: 350px;

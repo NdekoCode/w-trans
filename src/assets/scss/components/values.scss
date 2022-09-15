@@ -1,5 +1,10 @@
 .our-values {
-    position: relative;
+    background: var(--white-gradient_1);
+    position  : relative;
+
+    &.section {
+        padding: rem(90) 0;
+    }
 
     .position {
         position: absolute;
@@ -10,8 +15,16 @@
 
     }
 
+    .value {
+        margin-bottom: rem(80);
+    }
+
+    .btn-link {
+        font-weight: 700;
+    }
+
     .value__image {
-        min-height      : 250px;
+        min-height      : 350px;
         max-height      : 400px;
         width           : 100%;
         background-color: var(--gray);
