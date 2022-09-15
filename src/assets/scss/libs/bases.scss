@@ -1,5 +1,6 @@
 @import "./variables";
 @import "./functions";
+@import "./mixins";
 
 /** LES STYLES DE BASE */
 *,
@@ -65,7 +66,17 @@ body {
 a,
 .btn-link {
     font-family: var(--ff-link);
-    color      : var(--green);
+    color      : inherit;
+}
+
+main {
+    a {
+        color: var(--green);
+    }
+
+    .title {
+        color: var(--text-title);
+    }
 }
 
 img {
@@ -151,8 +162,9 @@ p {
 
 .block-right,
 .block-left {
-    min-width: 250px;
-    width    : 100%;
+    min-width : 250px;
+    min-height: 250px;
+    width     : 100%;
 }
 
 .title {

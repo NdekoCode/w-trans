@@ -14,10 +14,14 @@
         align-items: center;
         min-width  : 100%;
 
+        @media #{$sml} {
+            min-width: 650px;
+        }
+
         .btn {
             margin   : 5px 0;
-            max-width: 100px;
-            min-width: max-content;
+            max-width: max-content;
+            min-width: 100px;
 
         }
 
@@ -98,6 +102,10 @@
     .hero {
         .block-content {
             flex-wrap: nowrap;
+        }
+
+        .title {
+            @include textWhiteSelected();
         }
 
         .container {
