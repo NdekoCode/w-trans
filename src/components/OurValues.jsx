@@ -25,13 +25,15 @@ const OurValues = () => {
       <div className="container">
         {values.map(({ title, content, image }, index) => (
           <div className="value" key={index}>
-            <div className="value__infos">
+            <div className="value__infos" data-count={`0${index}`}>
               <h2 className="title title-2">{title}</h2>
               <p>{content}</p>
             </div>
             <div
               className="value__image bg-cover bg-center"
-              style={{ backgroundImage: `url(${image})` }}
+              style={{
+                backgroundImage: `linear-gradient(-45deg, rgba(0,0,0,0.2) 15%, rgba(0,0,0,0.4)),url(${image})`,
+              }}
             ></div>
             <a href="#" className="block btn-link my-10">
               En savoir plus

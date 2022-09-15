@@ -35,8 +35,29 @@
 
 .value__infos {
     padding-bottom: 40px;
+    position      : relative;
+
+    &::before {
+        content            : ' ('attr(data-count) ')';
+        width              : 168px;
+        height             : 168px;
+        position           : absolute;
+        z-index            : -1;
+        right              : 0;
+        top                : 50%;
+        transform          : translateY(-50%);
+        // background-color: var(--gray);
+        color              : var(--text-light);
+        // display : none;
+
+    }
+
+    p {
+        max-width: 816px;
+    }
 
     .title {
         margin-bottom: 24px;
+        max-width    : 920px;
     }
 }
