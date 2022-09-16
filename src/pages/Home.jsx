@@ -1,6 +1,7 @@
 import React from "react";
 import Footer from "../components/Footer";
 import HeaderHome from "../components/HeaderHome";
+import OurServices from "../components/OurServices";
 import OurValues from "../components/OurValues";
 
 const Home = () => {
@@ -9,6 +10,7 @@ const Home = () => {
       <HeaderHome />
       <main>
         <OurValues />
+        <OurServices />
       </main>
       <Footer />
     </>
