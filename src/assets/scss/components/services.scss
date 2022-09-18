@@ -1,35 +1,21 @@
-.service-item {
-    @extend %card;
-    margin-bottom   : var(--equal-space);
-    justify-content : center;
-    background-image: linear-gradient(180deg, #f9fcff 0%, #e3f4ff 100%);
+.service__item {
+    min-height: 300px;
+    min-width : 250px;
+    max-width : max-content;
+    max-height: max-content;
+    color     : var(--text-dark);
+    transition: background-color 0.35s, color 0.35s;
 
-    h4 {
-        text-transform: capitalize;
-    }
-}
-
-@media #{$sml} {
-    .service-item {
-        min-height: 450px;
+    .title {
+        font-weight: 500;
     }
 
-    .member-item,
-    .service-item {
-        flex-basis: 45%;
+    &:hover {
+        background-color: var(--green_b);
+        color           : var(--textGray);
+
+        .title {
+            color: var(--white);
+        }
     }
-}
-
-@media #{$md} {
-
-    .service-item {
-        margin-bottom: 0;
-    }
-
-    .member-item,
-    .service-item {
-        flex-basis: 33%;
-
-    }
-
 }
