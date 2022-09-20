@@ -108,13 +108,14 @@
     background-color: var(--green);
     color           : var(--white);
 
-    &:hover {
-        background-color: var(--green_b);
-    }
 }
 
 .text-primary {
     color: var(--green);
+}
+
+.bg-white-gradient {
+    background: var(--white-gradient_1) no-repeat center center / cover;
 }
 
 .text-primary-dark {
@@ -125,9 +126,6 @@
     background-color: var(--green_b);
     color           : var(--white);
 
-    &:hover {
-        background-color: var(--green);
-    }
 }
 
 
