@@ -4,6 +4,7 @@
     max-width : max-content;
     max-height: max-content;
     color     : var(--text-dark);
+    transition: background-color 0.3s, color 0.3s;
 
     .title {
         font-weight: 500;

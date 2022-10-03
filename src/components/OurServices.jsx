@@ -29,12 +29,15 @@ const OurServices = () => {
               />
             </svg>
           </span>
-          <h4 className="mt-3 title font-medium title-5">Système solaire</h4>
+          <h4 className="mt-3 title font-medium title-5">
+            Recyclage de déchets plastiques en pavés écologiques
+          </h4>
           <p className="mt-2 text-sm text-slate-500">
-            Les panéau solaire peuvent générer d'énormes quantités d'énergie de
-            forge à partir de la lumière du soleil, c'est un bonne initiative
-            pour proteger notre planete et qui est l'une de nos aspirations
-            futures qu'on souhaite offrir
+            Cette méthode consiste à incinérer les déchets plastiques pour
+            récupérer l'énergie qu'ils contiennent sous forme de chaleur. Les
+            plastiques, composés de pétrole raffiné, ont une capacité
+            calorifique proche de celui-ci. Cette méthode de valorisation permet
+            de recycler une grande partie des déchets plastiques.
           </p>
         </div>
         <div className="service__item flex flex-col  p-10 cursor-pointer  md:lg:xl:border-r md:lg:xl:border-b">
@@ -53,10 +56,13 @@ const OurServices = () => {
               />
             </svg>
           </span>
-          <h4 className="mt-3 title font-medium title-5">Recyclage</h4>
+          <h4 className="mt-3 title font-medium title-5">
+            Recyclage et vente des produits issus de l’aluminium recyclé
+          </h4>
           <p className="mt-2 text-sm text-slate-500">
             Participer toutes les couches de la population dans le processus de
-            protection de l'environnement
+            protection de l'environnement. L'Aluminium est aussi recyclable à
+            100%
           </p>
         </div>
         <div className="service__item flex flex-col  p-10 cursor-pointer  md:lg:xl:border-b">
