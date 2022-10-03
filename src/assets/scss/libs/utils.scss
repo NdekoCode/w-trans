@@ -44,6 +44,28 @@
         }
     }
 
+    &.btn-primary-dark {
+        @extend %btn-color;
+        background-color: var(--green_b);
+
+        &:hover {
+            color       : var(--green_b);
+            border-color: var(--green_b);
+
+        }
+    }
+
+    &.btn-primary-dark-outline {
+        border-color    : var(--green_b);
+        color           : var(--green_b);
+        background-color: var(--white_1);
+
+        &:hover {
+            background-color: var(--green_b);
+            color           : var(--white_1);
+        }
+    }
+
 
     &.btn-secondary {
         @extend %btn-color;
@@ -114,6 +136,10 @@
     color: var(--green);
 }
 
+.text-white-light {
+    color: var(--text-light);
+}
+
 .bg-white-gradient {
     background: var(--white-gradient_1) no-repeat center center / cover;
 }
@@ -138,6 +164,14 @@
 
 .bg-main-color {
     background-color: var(--green_b);
+}
+
+.border-black {
+    border-color: var(--text-title);
+}
+
+.bg-black {
+    background-color: var(--text-title);
 }
 
 .text-main-color {

@@ -107,6 +107,7 @@ h6,
 strong {
     font-family: var(--ff-title);
     font-weight: 700;
+    color      : var(--text-title);
 }
 
 .title {
@@ -170,6 +171,14 @@ p {
     min-width : 250px;
     min-height: 250px;
     width     : 100%;
+}
+
+.text-dark {
+    color: var(--text-dark);
+}
+
+.text-title {
+    color: var(--text-title);
 }
 
 .title {

@@ -17,7 +17,7 @@ const OurVision = () => {
           </p>
         </div>
         <div className="flex items-center justify-center">
-          <a className="px-4 py-2 mx-1 my-2 text-sm  transition duration-150 ease-in-out btn btn-primary focus:outline-none focus:ring-2 focus:ring-offset-2  lg:text-xl lg:font-bold sm:px-10 sm:py-4">
+          <a className="px-4 py-2 mx-1 my-2 text-sm  transition duration-150 ease-in-out btn btn-primary-dark focus:outline-none focus:ring-2 focus:ring-offset-2  lg:text-xl lg:font-bold sm:px-10 sm:py-4">
             Commencer avec nous
           </a>
           <button className="px-4 py-2 text-sm  transition duration-150 ease-in-out btn btn-primary-outline focus:outline-none focus:ring-2 focus:ring-offset-2  lg:text-xl lg:font-bold sm:px-10 sm:py-4 mx-1 my-2">
