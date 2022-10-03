@@ -29,12 +29,10 @@ const OurServices = () => {
           <h4 className="mt-3 title font-medium title-5">
             Recyclage de déchets plastiques en pavés écologiques
           </h4>
-          <p className="mt-2 text-sm text-slate-500">
-            Cette méthode consiste à incinérer les déchets plastiques pour
-            récupérer l'énergie qu'ils contiennent sous forme de chaleur. Les
-            plastiques, composés de pétrole raffiné, ont une capacité
-            calorifique proche de celui-ci. Cette méthode de valorisation permet
-            de recycler une grande partie des déchets plastiques.
+          <p className="mt-2  text-slate-500">
+            La transformation du pavé écologique commence tout d'abord par le
+            recyclage de plastique légers, tel que les bouteilles, les sachets,
+            les bouchons
           </p>
         </div>
         <div className="service__item flex flex-col  p-10 cursor-pointer  md:lg:xl:border-r md:lg:xl:border-b">
@@ -56,7 +54,7 @@ const OurServices = () => {
           <h4 className="mt-3 title font-medium title-5">
             Recyclage et vente des produits issus de l’aluminium recyclé
           </h4>
-          <p className="mt-2 text-sm text-slate-500">
+          <p className="mt-2  text-slate-500">
             Participer toutes les couches de la population dans le processus de
             protection de l'environnement. L'Aluminium est aussi recyclable à
             100%
@@ -87,7 +85,7 @@ const OurServices = () => {
             </svg>
           </span>
           <h4 className="mt-3 title font-medium title-5">Planter des arbres</h4>
-          <p className="mt-2 text-sm text-slate-500">
+          <p className="mt-2  text-slate-500">
             Les arbres jouent un rôle très important pour la préservation de
             notre planète. Ils stockent le dioxyde de carbone et purifient ainsi
             l'air que nous respirons. Aussi, chaque arbre planté permet de
@@ -112,8 +110,8 @@ const OurServices = () => {
           <h4 className="mt-3 title font-medium title-5">
             Formation sur le recyclage
           </h4>
-          <p className="mt-2 text-sm text-slate-500">
-            Le recyclage est en effet l'un des leviers de la protection de
+          <p className="mt-2  text-slate-500">
+            Le recyclage est l'un des leviers de la protection de
             l'environnement. Il aide à la fois à limiter le réchauffement
             climatique en diminuant la part des déchets incinérés et l'émission
             de gaz à effet de serre tels que le dioxyde de carbone, le soufre et
@@ -142,12 +140,11 @@ const OurServices = () => {
           <h4 className="mt-3 title font-medium title-5">
             Sensibilisation sur la gestion de déchets ménagers et publics
           </h4>
-          <p className="mt-2 text-sm text-slate-500">
-            La gestion de déchets est bénéfique à plusieurs titres. Pour nos
-            enfants, pour notre ville, pour notre environnement et notre nature,
-            et surtout pour notre budget. Votre geste de tri contribue à
-            économiser des ressources naturelles, à éviter le gaspillage et à
-            limiter les pollutions.
+          <p className="mt-2  text-slate-500">
+            La gestion de déchets est bénéfique pour nos enfants, pour notre
+            ville, pour notre environnement et notre nature. Votre geste de tri
+            contribue à économiser des ressources naturelles, à éviter le
+            gaspillage et à limiter les pollutions.
           </p>
         </div>
         <div className="service__item flex flex-col  p-10 cursor-pointer">
@@ -175,9 +172,9 @@ const OurServices = () => {
             </svg>
           </span>
           <h4 className="mt-3 title font-medium title-5">Pavage d'enclose</h4>
-          <p className="mt-2 text-sm text-slate-500">
+          <p className="mt-2  text-slate-500">
             Que vous rêviez d'un jardin moderne, classique ou rustique, le pavés
-            de wastes-trans sont faite en plastique recycleret vous permet de
+            de wastes-trans sont faite en plastique recycler et vous permet de
             donner vie à la protection de l'environnement
           </p>
         </div>
