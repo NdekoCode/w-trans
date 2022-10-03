@@ -18,8 +18,8 @@ const OurVision = () => {
           </p>
         </div>
 
-        <div class="flex flex-wrap justify-center my-12">
-          <div class="w-full lg:w-3/12 px-4 text-center">
+        <div class="flex flex-wrap justify-center my-10 space-x-3">
+          <div class="w-full lg:w-3/12 px-4 text-center mb-5 py-10 rounded-xl bg-white shadow-md ">
             <div class="text-primary-dark p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                 <path
@@ -37,7 +37,7 @@ const OurVision = () => {
               parcours des déchets.
             </p>
           </div>
-          <div class="w-full lg:w-3/12 px-4 text-center">
+          <div class="w-full lg:w-3/12 px-4 text-center mb-5 py-10 rounded-xl bg-white shadow-md">
             <div class="text-primary-dark p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                 <path
@@ -54,7 +54,7 @@ const OurVision = () => {
               plastique pour réduire la pollution de l’environnement.
             </p>
           </div>
-          <div class="w-full lg:w-3/12 px-4 text-center">
+          <div class="w-full lg:w-3/12 px-4 text-center mb-5 py-10 rounded-xl bg-white shadow-md">
             <div class="text-primary-dark p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
                 <path
