@@ -28,7 +28,7 @@ const OurVision = () => {
                 />
               </svg>
             </div>
-            <h5 class="text-xl mt-5 font-semibold text-primary-dark">
+            <h5 class="text-2xl mt-5 font-semibold text-primary-dark">
               Excellents services de recyclage
             </h5>
             <p class="mt-2 mb-4 text-blueGray-400">
@@ -46,7 +46,7 @@ const OurVision = () => {
                 />
               </svg>
             </div>
-            <h5 class="text-xl mt-5 font-semibold text-primary-dark">
+            <h5 class="text-2xl mt-5 font-semibold text-primary-dark">
               Marché des pavés recycler
             </h5>
             <p class="mt-2 mb-4 text-blueGray-400">
@@ -63,7 +63,7 @@ const OurVision = () => {
                 />
               </svg>
             </div>
-            <h5 class="text-xl mt-5 font-semibold text-primary-dark ">
+            <h5 class="text-2xl mt-5 font-semibold text-primary-dark ">
               Heure de lancement de sensibilisations
             </h5>
             <p class="mt-2 mb-4 text-blueGray-400">
