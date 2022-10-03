@@ -44,6 +44,28 @@
         }
     }
 
+    &.btn-primary-dark {
+        @extend %btn-color;
+        background-color: var(--green_b);
+
+        &:hover {
+            color       : var(--green_b);
+            border-color: var(--green_b);
+
+        }
+    }
+
+    &.btn-primary-dark-outline {
+        border-color    : var(--green_b);
+        color           : var(--green_b);
+        background-color: var(--white_1);
+
+        &:hover {
+            background-color: var(--green_b);
+            color           : var(--white_1);
+        }
+    }
+
 
     &.btn-secondary {
         @extend %btn-color;

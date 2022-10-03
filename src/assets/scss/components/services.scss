@@ -1,3 +1,7 @@
+#services {
+    background: linear-gradient(180deg, #E2EEEC -5.54%, rgba(227, 239, 237, 0) 100%);
+}
+
 .service__item {
     min-height: 300px;
     min-width : 250px;
@@ -10,6 +14,11 @@
         font-weight: 500;
     }
 
+    .icon-service {
+        background-color: #E2EEEC;
+        border-radius   : 16px;
+    }
+
     &:hover {
         background-color: var(--green_b);
         color           : var(--text-light);
@@ -17,6 +26,10 @@
 
         .title {
             color: var(--white);
+        }
+
+        .icon-service {
+            background-color: #254330;
         }
 
         * {

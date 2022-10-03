@@ -2,16 +2,13 @@ import React from "react";
 
 const OurServices = () => {
   return (
-    <section
-      id="services"
-      className="px-3 py-20 md:lg:xl:px-40 bg-opacity-10 bg-white-gradient"
-    >
+    <section id="services" className="px-3 py-20 md:lg:xl:px-40 bg-opacity-10 ">
       <h2 className="title title-2 max-w-md">
         Notre mission pour sauver la planète
       </h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 bg-white border shadow-xl md:lg:xl:grid-cols-3 group shadow-neutral-100">
+      <div className="grid grid-cols-1 sm:grid-cols-2 bg-white-gradient border shadow-xl md:lg:xl:grid-cols-3 group shadow-neutral-100">
         <div className="service__item flex flex-col  p-10 cursor-pointer  md:lg:xl:border-r md:lg:xl:border-b">
-          <span className="p-5">
+          <span className="p-5 w-max  icon-service">
             <svg
               width="40"
               height="40"
@@ -41,7 +38,7 @@ const OurServices = () => {
           </p>
         </div>
         <div className="service__item flex flex-col  p-10 cursor-pointer  md:lg:xl:border-r md:lg:xl:border-b">
-          <span className="p-5">
+          <span className="p-5 w-max  icon-service">
             <svg
               width="40"
               height="40"
@@ -66,7 +63,7 @@ const OurServices = () => {
           </p>
         </div>
         <div className="service__item flex flex-col  p-10 cursor-pointer  md:lg:xl:border-b">
-          <span className="p-5 ">
+          <span className="p-5 w-max  icon-service ">
             <svg
               width="40"
               height="40"
@@ -98,7 +95,7 @@ const OurServices = () => {
           </p>
         </div>
         <div className="service__item flex flex-col  p-10 cursor-pointer  md:lg:xl:border-r">
-          <span className="p-5 ">
+          <span className="p-5 w-max  icon-service ">
             <svg
               width="40"
               height="40"
@@ -113,7 +110,7 @@ const OurServices = () => {
             </svg>
           </span>
           <h4 className="mt-3 title font-medium title-5">
-            formation sur le recyclage en général
+            Formation sur le recyclage
           </h4>
           <p className="mt-2 text-sm text-slate-500">
             Le recyclage est en effet l'un des leviers de la protection de
@@ -124,7 +121,7 @@ const OurServices = () => {
           </p>
         </div>
         <div className="service__item flex flex-col p-10 cursor-pointer  md:lg:xl:border-r">
-          <span className="p-5">
+          <span className="p-5 w-max  icon-service">
             <svg
               width="40"
               height="40"
@@ -143,7 +140,7 @@ const OurServices = () => {
             </svg>
           </span>
           <h4 className="mt-3 title font-medium title-5">
-            sensibilisation sur la gestion de déchets ménagers et publics
+            Sensibilisation sur la gestion de déchets ménagers et publics
           </h4>
           <p className="mt-2 text-sm text-slate-500">
             La gestion de déchets est bénéfique à plusieurs titres. Pour nos
@@ -154,7 +151,7 @@ const OurServices = () => {
           </p>
         </div>
         <div className="service__item flex flex-col  p-10 cursor-pointer">
-          <span className="p-5">
+          <span className="p-5 w-max  icon-service">
             <svg
               width="40"
               height="40"

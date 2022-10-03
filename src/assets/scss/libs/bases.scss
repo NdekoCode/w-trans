@@ -172,6 +172,14 @@ p {
     width     : 100%;
 }
 
+.text-dark {
+    color: var(--text-dark);
+}
+
+.text-title {
+    color: var(--text-title);
+}
+
 .title {
     line-height: 1.3;
 }
