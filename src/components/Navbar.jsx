@@ -7,6 +7,7 @@ import { navbarRouter } from "../routes/routes";
 import imgUser from "../assets/images/icons/user-light.svg";
 import Logo from "./Logo";
 import SubLinks from "./SubLinks";
+import { Link } from "react-router-dom";
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState({
     className: "humburger",
@@ -85,7 +86,7 @@ const Navbar = () => {
             </a>
           </li>
           <li className="sign-btns">
-            <a href="#">Se connecter</a>
+            <Link to="/login">Se connecter</Link>
           </li>
         </ul>
       </div>

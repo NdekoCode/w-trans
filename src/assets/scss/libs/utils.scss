@@ -136,6 +136,10 @@
     color: var(--green);
 }
 
+.text-white-light {
+    color: var(--text-light);
+}
+
 .bg-white-gradient {
     background: var(--white-gradient_1) no-repeat center center / cover;
 }
@@ -160,6 +164,14 @@
 
 .bg-main-color {
     background-color: var(--green_b);
+}
+
+.border-black {
+    border-color: var(--text-title);
+}
+
+.bg-black {
+    background-color: var(--text-title);
 }
 
 .text-main-color {
