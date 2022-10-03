@@ -4,7 +4,6 @@
     max-width : max-content;
     max-height: max-content;
     color     : var(--text-dark);
-    transition: background-color 0.35s, color 0.35s;
 
     .title {
         font-weight: 500;
@@ -14,8 +13,13 @@
         background-color: var(--green_b);
         color           : var(--text-light);
 
+
         .title {
             color: var(--white);
+        }
+
+        * {
+            color: currentColor;
         }
     }
 }
