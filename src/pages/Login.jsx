@@ -29,7 +29,7 @@ const Login = () => {
             <p className="font-medium">© 2022 Wastes Transformation</p>
           </div>
           {/* Login */}
-          <div className="flex flex-1 flex-col items-center justify-center px-10 relative">
+          <div className="flex flex-1 flex-col items-center my-auto justify-center px-10 relative">
             <div className="flex lg:hidden justify-between items-center w-full py-4">
               <div className="flex items-center justify-start space-x-3">
                 <span className="bg-black rounded-full w-6 h-6" />
@@ -45,7 +45,7 @@ const Login = () => {
               </div>
             </div>
             {/* Login box */}
-            <div className="flex flex-1 flex-col  justify-center space-y-5 max-w-md">
+            <div className="flex flex-1 flex-col  justify-center space-y-5 max-w-md mt-10">
               <div className="flex flex-col space-y-2 text-center">
                 <h2 className="text-3xl md:text-4xl font-bold">
                   Connectez-vous au compte
@@ -81,7 +81,7 @@ const Login = () => {
                 </button>
                 <div className="flex justify-center items-center">
                   <span className="w-full border border-black" />
-                  <span className="px-4">Or</span>
+                  <span className="px-4">Ou</span>
                   <span className="w-full border border-black" />
                 </div>
                 <button className="flex items-center justify-center flex-none px-3 py-2 md:px-4 md:py-3 border-2 rounded-lg font-medium border-black relative">
@@ -116,7 +116,7 @@ const Login = () => {
               </form>
             </div>
             {/* Footer */}
-            <div className="flex justify-center flex-col m-auto mb-16 text-center text-lg dark:text-slate-200 ">
+            <div className="flex justify-center flex-col mx-auto mt-auto text-center text-lg dark:text-slate-200 ">
               <p>
                 Contactez-nous sur les différentes plateformes et réseaux
                 sociaux
