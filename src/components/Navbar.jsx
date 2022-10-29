@@ -35,9 +35,6 @@ const Navbar = () => {
       }
     }).observe(document.body);
   });
-  useEffect(() => {
-    const humburger = document.getElementById("humburger");
-  }, [toggleMenu]);
   return (
     <nav className="navbar">
       <div className="container">
@@ -61,20 +58,20 @@ const Navbar = () => {
                 return (
                   <SubLinks key={index} name={name} childLinks={children} />
                 );
-              } else {
-                return (
-                  <li className="list-item" key={index}>
-                    <NavLink
-                      to={path}
-                      className="navlink"
-                      href="#"
-                      aria-current="page"
-                    >
-                      {name}
-                    </NavLink>
-                  </li>
-                );
               }
+              return (
+                <li className="list-item" key={index}>
+                  <NavLink
+                    to={path}
+                    className="navlink"
+                    href="#"
+                    aria-current="page"
+                    end
+                  >
+                    {name}
+                  </NavLink>
+                </li>
+              );
             })}
           </ul>
         </div>

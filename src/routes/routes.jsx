@@ -56,7 +56,8 @@ const routes = [
     element: <Login />,
   },
   {
-    path: "Actualités",
+    path: "/news",
+    name: "Actualités",
     element: <News />,
   },
   {
@@ -91,9 +92,9 @@ export const navbarRouter = [
     element: <About />,
   },
   {
-    path: "/projets",
-    name: "Projet",
-    element: <Project />,
+    path: "/news",
+    name: "Actualités",
+    element: <News />,
   },
   {
     path: "/services",
@@ -110,6 +111,11 @@ export const navbarRouter = [
         name: "Assainissement",
       },
     ],
+  },
+  {
+    path: "/projets",
+    name: "Projet",
+    element: <Project />,
   },
   {
     path: "/contact",
