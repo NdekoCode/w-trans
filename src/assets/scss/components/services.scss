@@ -1,14 +1,19 @@
 #services {
-    background: linear-gradient(180deg, #E2EEEC -5.54%, rgba(227, 239, 237, 0) 100%);
+    background: linear-gradient(330deg, #E2EEEC -5.54%, rgba(227, 239, 237, 0) 100%);
 }
 
 .service__item {
+    background-color: rgba(255,255,255,0.75);
     min-height: 300px;
     min-width : 250px;
     max-width : max-content;
     max-height: max-content;
     color     : var(--text-dark);
     transition: background-color 0.3s, color 0.3s;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 5px;
+    margin: 5px;
+    box-shadow: 0 0 8px rgb(0 0 0 / 5%);
 
     .title {
         font-weight: 500;
