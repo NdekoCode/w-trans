@@ -36,7 +36,7 @@ const OurValues = () => {
                 backgroundImage: `linear-gradient(-45deg, rgba(0,0,0,0.2) 15%, rgba(0,0,0,0.4)),url(${image})`,
               }}
             ></div>
-            <a href="#" className="block btn-link my-10">
+            <a href="#" className="block btn-link my-5">
               En savoir plus
             </a>
           </div>

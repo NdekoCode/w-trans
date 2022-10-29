@@ -1,31 +1,57 @@
 import React from "react";
 import Hero from "../components/Hero";
 import PageLayout from "../components/PageLayout";
+import playBtn from "../assets/images/icons/play.svg";
+import img1 from "../assets/images/image-1.jpg";
+import img2 from "../assets/images/image-2.jpeg";
+import img3 from "../assets/images/image-3.jpeg";
+import Block from "../components/Block";
 
 const Project = () => {
   return (
     <PageLayout>
-      <Hero />
-      <div className="bg-gray-100">
-        <div className="container flex flex-col items-center py-12 mx-auto sm:py-24">
-          <div className="flex-col items-center justify-center w-11/12 mb-5 sm:w-2/3 lg:flex sm:mb-10">
-            <h1>Nos projets</h1>
-            <p className="mt-5 text-sm font-normal text-center text-gray-400 sm:mt-10 lg:w-10/12 sm:text-lg reveal-visible">
-              A professonal website drives sales. Create a beautiful website to
-              impress and engage new customers and establish your business
-              online{"{"}" "{"}"}
-            </p>
-          </div>
-          <div className="flex items-center justify-center">
-            <button className="px-4 py-2 text-sm text-white transition duration-150 ease-in-out bg-indigo-700 border border-indigo-700 rounded focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-700 hover:bg-indigo-600 lg:text-xl lg:font-bold sm:px-10 sm:py-4">
-              Get Started
-            </button>
-            <button className="px-4 py-2 ml-4 text-sm text-indigo-700 transition duration-150 ease-in-out bg-transparent border border-indigo-700 rounded focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-700 hover:border-indigo-600 lg:text-xl lg:font-bold hover:text-indigo-600 sm:px-10 sm:py-4">
-              Live Demo
-            </button>
-          </div>
-        </div>
-      </div>
+      <Hero
+        BlockLeft={
+          <Block>
+            <div className="block-left">
+              <h1 className="title">Nos projets</h1>
+              <div>
+                <p>
+                  Nous mettons en place le paves fabriqués à base de déchets
+                  plastique pour réduire la pollution de l’environnement.
+                </p>
+                <p>
+                  Cultivons les bons gestes pour un environnement plus sain,
+                  devenons tous Éco-Citoyens !
+                </p>
+              </div>
+              <div className="btn-container">
+                <a href="#" className="btn btn-primary">
+                  Commencer aujourd'hui
+                </a>
+                <a href="#" className="btn btn-icon">
+                  <img src={playBtn} alt="Play" />
+                  <span>Comment on fonctionne</span>
+                </a>
+              </div>
+            </div>
+          </Block>
+        }
+        BlockRight={
+          <Block>
+            <div className="block-right">
+              <div className="hero__circle">
+                <div
+                  className="circle-hero bg-cover bg-center circle-1"
+                  style={{
+                    backgroundImage: `linear-gradient(45deg, rgba(0,0,0,0.2) 15%, rgba(0,0,0,0.4)),url(${img1})`,
+                  }}
+                ></div>
+              </div>
+            </div>
+          </Block>
+        }
+      />
     </PageLayout>
   );
 };

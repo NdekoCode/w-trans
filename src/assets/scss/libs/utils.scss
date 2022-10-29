@@ -131,7 +131,9 @@
     color           : var(--white);
 
 }
-
+.bg-green-light {
+    background-image: var(--green-linear);
+}
 .text-primary {
     color: var(--green);
 }

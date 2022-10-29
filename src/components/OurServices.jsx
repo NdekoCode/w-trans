@@ -2,7 +2,10 @@ import React from "react";
 
 const OurServices = () => {
   return (
-    <section id="services" className="px-3 py-20 md:lg:xl:px-40 bg-opacity-10 ">
+    <section
+      id="services"
+      className="px-3 py-20 mt-5 md:lg:xl:px-40 bg-opacity-10 "
+    >
       <h2 className="title title-2 max-w-md">
         Notre mission pour sauver la planète
       </h2>
@@ -307,7 +310,7 @@ const OurServices = () => {
               />
             </svg>
           </span>
-          <h4 className="mt-3 title font-medium title-5">Pavage d'enclose</h4>
+          <h4 className="mt-3 title font-medium title-5">Pavage d'enclos</h4>
           <p className="mt-2  text-slate-500">
             Que vous rêviez d'un jardin moderne, classique ou rustique, le pavés
             de wastes-trans sont faite en plastique recycler et vous permet de
