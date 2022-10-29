@@ -37,7 +37,6 @@ const Navbar = () => {
   });
   useEffect(() => {
     const humburger = document.getElementById("humburger");
-    console.log(humburger);
   }, [toggleMenu]);
   return (
     <nav className="navbar">
