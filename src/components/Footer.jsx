@@ -48,19 +48,36 @@ const Footer = () => {
             </h3>
             <ul className="text-gray-500">
               <li className="mb-3">
-                <a href="#" className="hover:underline">
+                <a
+                  href="https://twitter.com/wastestrans?t=kQlkkOeWSbcd1-0gn9wGSg&s=09"
+                  className="hover:underline"
+                >
                   Twitter
                 </a>
               </li>
               <li className="mb-3">
-                <a href="#" className="hover:underline">
+                <a
+                  href="https://www.linkedin.com/in/wastes-transformation-291802245 "
+                  className="hover:underline"
+                >
+                  Linkedin
+                </a>
+              </li>
+              <li className="mb-3">
+                <a
+                  href="https://www.facebook.com/profile.php?id=100083343794846"
+                  className="hover:underline"
+                >
                   Facebook
                 </a>
               </li>
               <a href="#" className="hover:underline"></a>
               <li className="mb-3">
                 <a href="#" className="hover:underline"></a>
-                <a href="#" className="hover:underline">
+                <a
+                  href="https://instagram.com/wastestransformation?igshid=YmMyMTA2M2Y="
+                  className="hover:underline"
+                >
                   Instagram
                 </a>
               </li>
