@@ -1,7 +1,7 @@
-import { lazy } from "react";
-import { Suspense } from "react";
+import { lazy, Suspense } from "react";
 import LoadingPage from "../components/LoadingPage";
 import About from "../pages/About";
+import Assainissement from "../pages/Assainissement";
 import Cards from "../pages/Cards";
 const Contact = lazy(() => import("../pages/Contact"));
 const Home = lazy(() => import("../pages/Home"));
@@ -9,6 +9,7 @@ import Login from "../pages/Login";
 import News from "../pages/News";
 import Partners from "../pages/Partners";
 import Project from "../pages/Project";
+import Recyclage from "../pages/Recyclage";
 import Services from "../pages/Services";
 
 const routes = [
@@ -27,7 +28,7 @@ const routes = [
     element: <About />,
   },
   {
-    path: "partners",
+    path: "/partners",
     name: "Partenaires",
     element: <Partners />,
   },
@@ -68,12 +69,12 @@ const routes = [
   {
     path: "/services/recyclage",
     name: "Recyclage",
-    element: <Project />,
+    element: <Recyclage />,
   },
   {
     path: "/services/assainissement",
     name: "Assainissement",
-    element: <Project />,
+    element: <Assainissement />,
   },
 ];
 export const navbarRouter = [
@@ -90,6 +91,18 @@ export const navbarRouter = [
     path: "/about",
     name: "A propos",
     element: <About />,
+    children: [
+      {
+        path: "/about",
+        name: "Qui somme nous",
+        element: <About />,
+      },
+      {
+        path: "/partners",
+        name: "partenaires",
+        element: <Partners />,
+      },
+    ],
   },
   {
     path: "/news",

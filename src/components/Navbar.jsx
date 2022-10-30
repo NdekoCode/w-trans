@@ -1,14 +1,10 @@
-import React from "react";
-import { useCallback } from "react";
-import { useState } from "react";
-import { useEffect } from "react";
-import { NavLink } from "react-router-dom";
+import React, { useCallback, useState } from "react";
+import { NavLink, Link } from "react-router-dom";
 import { navbarRouter } from "../routes/routes";
 import imgUser from "../assets/images/icons/user-light.svg";
 import Logo from "./Logo";
 import SubLinks from "./SubLinks";
-import { Link } from "react-router-dom";
-const Navbar = () => {
+const Navbar = ({ logoStyle }) => {
   const [toggleMenu, setToggleMenu] = useState({
     className: "humburger",
     open: false,
@@ -38,7 +34,7 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="container">
-        <Logo />
+        <Logo logoStyle={logoStyle} />
         <div className="main-navlinks">
           <button
             onClick={toggleButton}
@@ -77,9 +73,9 @@ const Navbar = () => {
         </div>
         <ul className="nav-authentication">
           <li className="auth-links">
-            <a href="#" className="user-auth" aria-label="Se connecter">
+            <Link to="/login" className="user-auth" aria-label="Se connecter">
               <img src={imgUser} alt="user-icon" />
-            </a>
+            </Link>
           </li>
           <li className="sign-btns">
             <Link to="/login">Se connecter</Link>
