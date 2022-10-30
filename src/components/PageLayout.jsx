@@ -9,7 +9,7 @@ const PageLayout = ({
 }) => {
   return (
     <>
-      <Navbar />
+      <Navbar logoStyle={logoStyle} />
       <main>{children}</main>
       <Footer />
     </>
