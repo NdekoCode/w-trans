@@ -5,137 +5,136 @@ const Services = () => {
   return (
     <PageLayout>
       <h1>Nos services</h1>
-      <div className="py-16 bg-gray-50 overflow-hidden">
-        <div className="container m-auto px-6 space-y-8 text-gray-500 md:px-12">
-          <div>
-            <span className="text-gray-600 text-lg font-semibold">
-              Main features
-            </span>
-            <h2 className="mt-4 text-2xl text-gray-900 font-bold md:text-4xl">
-              A technology-first approach to payments{" "}
-              <br className="lg:block" hidden="" /> and finance
-            </h2>
+      <div className="container px-6 m-auto space-y-8 text-gray-500 md:px-12">
+        <div>
+          <span className="text-lg font-semibold text-gray-600">
+            Main features
+          </span>
+          <h2 className="mt-4 text-2xl font-bold text-gray-900 md:text-4xl">
+            A technology-first approach to payments
+            <br className="lg:block" hidden="" /> and finance
+          </h2>
+        </div>
+        <div className="grid mt-16 overflow-hidden border divide-x divide-y rounded-xl sm:grid-cols-2 lg:divide-y-0 lg:grid-cols-3 xl:grid-cols-4">
+          <div className="relative group bg-white transition hover:z-[1] hover:shadow-2xl reveal-visible">
+            <div className="relative p-8 space-y-8 reveal-1">
+              <img
+                src="https://tailus.io/sources/blocks/stacked/preview/images/avatars/burger.png"
+                className="w-10"
+                width={512}
+                height={512}
+                alt="burger illustration"
+              />
+              <div className="space-y-2">
+                <h5 className="text-xl font-medium text-gray-800 transition group-hover:text-yellow-600">
+                  First feature
+                </h5>
+                <p className="text-sm text-gray-600 reveal-visible">
+                  Neque Dolor, fugiat non cum doloribus aperiam voluptates
+                  nostrum.
+                </p>
+              </div>
+              <a
+                href="#"
+                className="flex items-center justify-between group-hover:text-yellow-600"
+              >
+                <span className="text-sm">Read more</span>
+                <span className="text-2xl transition duration-300 -translate-x-4 opacity-0 group-hover:opacity-100 group-hover:translate-x-0">
+                  →
+                </span>
+              </a>
+            </div>
           </div>
-          <div className="mt-16 grid border divide-x divide-y rounded-xl overflow-hidden sm:grid-cols-2 lg:divide-y-0 lg:grid-cols-3 xl:grid-cols-4">
-            <div className="relative group bg-white transition hover:z-[1] hover:shadow-2xl">
-              <div className="relative p-8 space-y-8">
-                <img
-                  src="https://tailus.io/sources/blocks/stacked/preview/images/avatars/burger.png"
-                  className="w-10"
-                  width={512}
-                  height={512}
-                  alt="burger illustration"
-                />
-                <div className="space-y-2">
-                  <h5 className="text-xl text-gray-800 font-medium transition group-hover:text-yellow-600">
-                    First feature
-                  </h5>
-                  <p className="text-sm text-gray-600">
-                    Neque Dolor, fugiat non cum doloribus aperiam voluptates
-                    nostrum.
-                  </p>
-                </div>
-                <a
-                  href="#"
-                  className="flex justify-between items-center group-hover:text-yellow-600"
-                >
-                  <span className="text-sm">Read more</span>
-                  <span className="-translate-x-4 opacity-0 text-2xl transition duration-300 group-hover:opacity-100 group-hover:translate-x-0">
-                    →
-                  </span>
-                </a>
+          <div className="relative group bg-white transition hover:z-[1] hover:shadow-2xl reveal-visible">
+            <div className="relative p-8 space-y-8 reveal-1">
+              <img
+                src="https://tailus.io/sources/blocks/stacked/preview/images/avatars/trowel.png"
+                className="w-10"
+                width={512}
+                height={512}
+                alt="burger illustration"
+              />
+              <div className="space-y-2">
+                <h5 className="text-xl font-medium text-gray-800 transition group-hover:text-yellow-600">
+                  Second feature
+                </h5>
+                <p className="text-sm text-gray-600 reveal-visible">
+                  Neque Dolor, fugiat non cum doloribus aperiam voluptates
+                  nostrum.
+                </p>
               </div>
+              <a
+                href="#"
+                className="flex items-center justify-between group-hover:text-yellow-600"
+              >
+                <span className="text-sm">Read more</span>
+                <span className="text-2xl transition duration-300 -translate-x-4 opacity-0 group-hover:opacity-100 group-hover:translate-x-0">
+                  →
+                </span>
+              </a>
             </div>
-            <div className="relative group bg-white transition hover:z-[1] hover:shadow-2xl">
-              <div className="relative p-8 space-y-8">
-                <img
-                  src="https://tailus.io/sources/blocks/stacked/preview/images/avatars/trowel.png"
-                  className="w-10"
-                  width={512}
-                  height={512}
-                  alt="burger illustration"
-                />
-                <div className="space-y-2">
-                  <h5 className="text-xl text-gray-800 font-medium transition group-hover:text-yellow-600">
-                    Second feature
-                  </h5>
-                  <p className="text-sm text-gray-600">
-                    Neque Dolor, fugiat non cum doloribus aperiam voluptates
-                    nostrum.
-                  </p>
-                </div>
-                <a
-                  href="#"
-                  className="flex justify-between items-center group-hover:text-yellow-600"
-                >
-                  <span className="text-sm">Read more</span>
-                  <span className="-translate-x-4 opacity-0 text-2xl transition duration-300 group-hover:opacity-100 group-hover:translate-x-0">
-                    →
-                  </span>
-                </a>
+          </div>
+          <div className="relative group bg-white transition hover:z-[1] hover:shadow-2xl reveal-visible">
+            <div className="relative p-8 space-y-8 reveal-1">
+              <img
+                src="https://tailus.io/sources/blocks/stacked/preview/images/avatars/package-delivery.png"
+                className="w-10"
+                width={512}
+                height={512}
+                alt="burger illustration"
+              />
+              <div className="space-y-2">
+                <h5 className="text-xl font-medium text-gray-800 transition group-hover:text-yellow-600">
+                  Third feature
+                </h5>
+                <p className="text-sm text-gray-600 reveal-visible">
+                  Neque Dolor, fugiat non cum doloribus aperiam voluptates
+                  nostrum.
+                </p>
               </div>
+              <a
+                href="#"
+                className="flex items-center justify-between group-hover:text-yellow-600"
+              >
+                <span className="text-sm">Read more</span>
+                <span className="text-2xl transition duration-300 -translate-x-4 opacity-0 group-hover:opacity-100 group-hover:translate-x-0">
+                  →
+                </span>
+              </a>
             </div>
-            <div className="relative group bg-white transition hover:z-[1] hover:shadow-2xl">
-              <div className="relative p-8 space-y-8">
-                <img
-                  src="https://tailus.io/sources/blocks/stacked/preview/images/avatars/package-delivery.png"
-                  className="w-10"
-                  width={512}
-                  height={512}
-                  alt="burger illustration"
-                />
-                <div className="space-y-2">
-                  <h5 className="text-xl text-gray-800 font-medium transition group-hover:text-yellow-600">
-                    Third feature
-                  </h5>
-                  <p className="text-sm text-gray-600">
-                    Neque Dolor, fugiat non cum doloribus aperiam voluptates
-                    nostrum.
-                  </p>
-                </div>
-                <a
-                  href="#"
-                  className="flex justify-between items-center group-hover:text-yellow-600"
-                >
-                  <span className="text-sm">Read more</span>
-                  <span className="-translate-x-4 opacity-0 text-2xl transition duration-300 group-hover:opacity-100 group-hover:translate-x-0">
-                    →
-                  </span>
-                </a>
+          </div>
+          <div className="relative group bg-gray-100 transition hover:z-[1] hover:shadow-2xl lg:hidden xl:block reveal-visible">
+            <div className="relative p-8 space-y-8 transition duration-300 border-dashed rounded-lg group-hover:bg-white group-hover:border group-hover:scale-90 reveal-1">
+              <img
+                src="https://tailus.io/sources/blocks/stacked/preview/images/avatars/metal.png"
+                className="w-10"
+                width={512}
+                height={512}
+                alt="burger illustration"
+              />
+              <div className="space-y-2">
+                <h5 className="text-xl font-medium text-gray-800 transition group-hover:text-yellow-600">
+                  More features
+                </h5>
+                <p className="text-sm text-gray-600 reveal-visible">
+                  Neque Dolor, fugiat non cum doloribus aperiam voluptates
+                  nostrum.
+                </p>
               </div>
-            </div>
-            <div className="relative group bg-gray-100 transition hover:z-[1] hover:shadow-2xl lg:hidden xl:block">
-              <div className="relative p-8 space-y-8 border-dashed rounded-lg transition duration-300 group-hover:bg-white group-hover:border group-hover:scale-90">
-                <img
-                  src="https://tailus.io/sources/blocks/stacked/preview/images/avatars/metal.png"
-                  className="w-10"
-                  width={512}
-                  height={512}
-                  alt="burger illustration"
-                />
-                <div className="space-y-2">
-                  <h5 className="text-xl text-gray-800 font-medium transition group-hover:text-yellow-600">
-                    More features
-                  </h5>
-                  <p className="text-sm text-gray-600">
-                    Neque Dolor, fugiat non cum doloribus aperiam voluptates
-                    nostrum.
-                  </p>
-                </div>
-                <a
-                  href="#"
-                  className="flex justify-between items-center group-hover:text-yellow-600"
-                >
-                  <span className="text-sm">Read more</span>
-                  <span className="-translate-x-4 opacity-0 text-2xl transition duration-300 group-hover:opacity-100 group-hover:translate-x-0">
-                    →
-                  </span>
-                </a>
-              </div>
+              <a
+                href="#"
+                className="flex items-center justify-between group-hover:text-yellow-600"
+              >
+                <span className="text-sm">Read more</span>
+                <span className="text-2xl transition duration-300 -translate-x-4 opacity-0 group-hover:opacity-100 group-hover:translate-x-0">
+                  →
+                </span>
+              </a>
             </div>
           </div>
         </div>
       </div>
+
       <section className="container pt-16 mx-auto bg-white max-w-8xl">
         <div>
           <div role="contentinfo" className="flex flex-col items-center px-4">
