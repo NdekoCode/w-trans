@@ -1,47 +1,111 @@
 import React from "react";
+import PageLayout from "../components/PageLayout";
 
 const Recyclage = () => {
   return (
     <PageLayout>
-      <div className="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
-        <a href="#">
-          <img
-            className="rounded-t-lg"
-            src="/docs/images/blog/image-1.jpg"
-            alt=""
-          />
-        </a>
-        <div className="p-5">
-          <a href="#">
-            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-              Noteworthy technology acquisitions 2021
-            </h5>
-          </a>
-          <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
-            Here are the biggest enterprise technology acquisitions of 2021 so
-            far, in reverse chronological order.
-          </p>
-          <a
-            href="#"
-            className="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-          >
-            Read more
-            <svg
-              aria-hidden="true"
-              className="ml-2 -mr-1 w-4 h-4"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fillRule="evenodd"
-                d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                clipRule="evenodd"
-              />
-            </svg>
-          </a>
+      <link
+        rel="stylesheet"
+        href="https://demos.creative-tim.com/notus-js/assets/styles/tailwind.css"
+      />
+      <link
+        rel="stylesheet"
+        href="https://demos.creative-tim.com/notus-js/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css"
+      />
+      <section className="relative pt-12 bg-blueGray-50">
+        <div className="items-center flex flex-wrap">
+          <div className="w-full md:w-4/12 ml-auto mr-auto px-4">
+            <img
+              alt="..."
+              className="max-w-full rounded-lg shadow-lg"
+              src="https://images.unsplash.com/photo-1555212697-194d092e3b8f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
+            />
+          </div>
+          <div className="w-full md:w-5/12 ml-auto mr-auto px-4">
+            <div className="md:pr-12">
+              <div className="text-pink-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-pink-300 mt-8">
+                <i className="fas fa-rocket text-xl" />
+              </div>
+              <h3 className="text-3xl font-semibold">A growing company</h3>
+              <p className="mt-4 text-lg leading-relaxed text-blueGray-500">
+                The extension comes with three pre-built pages to help you get
+                started faster. You can change the text and images and you're
+                good to go.
+              </p>
+              <ul className="list-none mt-6">
+                <li className="py-2">
+                  <div className="flex items-center">
+                    <div>
+                      <span className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-pink-200 mr-3">
+                        <i className="fas fa-fingerprint" />
+                      </span>
+                    </div>
+                    <div>
+                      <h4 className="text-blueGray-500">
+                        Carefully crafted components
+                      </h4>
+                    </div>
+                  </div>
+                </li>
+                <li className="py-2">
+                  <div className="flex items-center">
+                    <div>
+                      <span className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-pink-200 mr-3">
+                        <i className="fab fa-html5" />
+                      </span>
+                    </div>
+                    <div>
+                      <h4 className="text-blueGray-500">
+                        Amazing page examples
+                      </h4>
+                    </div>
+                  </div>
+                </li>
+                <li className="py-2">
+                  <div className="flex items-center">
+                    <div>
+                      <span className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-pink-200 mr-3">
+                        <i className="far fa-paper-plane" />
+                      </span>
+                    </div>
+                    <div>
+                      <h4 className="text-blueGray-500">Dynamic components</h4>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-      </div>
+        <footer className="relative  pt-8 pb-6 mt-8">
+          <div className="container mx-auto px-4">
+            <div className="flex flex-wrap items-center md:justify-between justify-center">
+              <div className="w-full md:w-6/12 px-4 mx-auto text-center">
+                <div className="text-sm text-blueGray-500 font-semibold py-1">
+                  Made with{" "}
+                  <a
+                    href="https://www.creative-tim.com/product/notus-js"
+                    className="text-blueGray-500 hover:text-gray-800"
+                    target="_blank"
+                  >
+                    Notus JS
+                  </a>{" "}
+                  by{" "}
+                  <a
+                    href="https://www.creative-tim.com"
+                    className="text-blueGray-500 hover:text-blueGray-800"
+                    target="_blank"
+                  >
+                    {" "}
+                    Creative Tim
+                  </a>
+                  .
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </section>
     </PageLayout>
   );
 };
