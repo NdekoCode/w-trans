@@ -1,5 +1,4 @@
-import { lazy } from "react";
-import { Suspense } from "react";
+import { lazy, Suspense } from "react";
 import LoadingPage from "../components/LoadingPage";
 import About from "../pages/About";
 import Cards from "../pages/Cards";
@@ -27,7 +26,7 @@ const routes = [
     element: <About />,
   },
   {
-    path: "partners",
+    path: "/partners",
     name: "Partenaires",
     element: <Partners />,
   },
@@ -90,6 +89,18 @@ export const navbarRouter = [
     path: "/about",
     name: "A propos",
     element: <About />,
+    children: [
+      {
+        path: "/about",
+        name: "Qui somme nous",
+        element: <About />,
+      },
+      {
+        path: "/partners",
+        name: "partenaires",
+        element: <Partners />,
+      },
+    ],
   },
   {
     path: "/news",
