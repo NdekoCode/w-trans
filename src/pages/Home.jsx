@@ -1,4 +1,5 @@
 import React from "react";
+import BlogCards from "../components/BlogCards";
 import Footer from "../components/Footer";
 import HeaderHome from "../components/HeaderHome";
 import OurProject from "../components/OurProject";
@@ -15,6 +16,7 @@ const Home = () => {
         <OurServices />
         <OurVision />
         <OurProject />
+        <BlogCards />
       </main>
       <Footer />
     </>

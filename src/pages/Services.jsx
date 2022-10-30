@@ -3,7 +3,7 @@ import PageLayout from "../components/PageLayout";
 
 const Services = () => {
   return (
-    <PageLayout>
+    <PageLayout logoStyle={{ color: "var(--text-title)" }}>
       <h1>Nos services</h1>
       <div className="container px-6 m-auto space-y-8 text-gray-500 md:px-12">
         <div>

@@ -17,7 +17,7 @@ const Assainissement = () => {
           <div className="container mx-auto">
             <div className="flex flex-wrap items-center">
               <div className="w-10/12 md:w-6/12 lg:w-4/12 px-12 md:px-4 mr-auto ml-auto -mt-78">
-                <div className="relative flex flex-col min-w-0 break-words  w-full mb-6 shadow-lg rounded-lg bg-pink-500">
+                <div className="relative flex flex-col min-w-0 break-words  w-full mb-6 shadow-lg rounded-lg bg-green-500">
                   <img
                     alt="..."
                     src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=80"
@@ -32,7 +32,7 @@ const Assainissement = () => {
                     >
                       <polygon
                         points="-30,95 583,95 583,65"
-                        className="text-pink-500 fill-current"
+                        className="text-green-500 fill-current"
                       />
                     </svg>
                     <h4 className="text-xl font-bold text-white">
@@ -111,34 +111,6 @@ const Assainissement = () => {
               </div>
             </div>
           </div>
-          <footer className="relative bg-blueGray-50 pt-8 pb-6 mt-2">
-            <div className="container mx-auto px-4">
-              <div className="flex flex-wrap items-center md:justify-between justify-center">
-                <div className="w-full md:w-6/12 px-4 mx-auto text-center">
-                  <div className="text-sm text-blueGray-500 font-semibold py-1">
-                    Made with{" "}
-                    <a
-                      href="https://www.creative-tim.com/product/notus-js"
-                      className="text-blueGray-500 hover:text-gray-800"
-                      target="_blank"
-                    >
-                      Notus JS
-                    </a>{" "}
-                    by{" "}
-                    <a
-                      href="https://www.creative-tim.com"
-                      className="text-blueGray-500 hover:text-blueGray-800"
-                      target="_blank"
-                    >
-                      {" "}
-                      Creative Tim
-                    </a>
-                    .
-                  </div>
-                </div>
-              </div>
-            </div>
-          </footer>
         </section>
       </>
     </PageLayout>

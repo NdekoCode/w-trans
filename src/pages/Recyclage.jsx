@@ -23,7 +23,7 @@ const Recyclage = () => {
           </div>
           <div className="w-full md:w-5/12 ml-auto mr-auto px-4">
             <div className="md:pr-12">
-              <div className="text-pink-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-pink-300 mt-8">
+              <div className="text-green-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-green-300 mt-8">
                 <i className="fas fa-rocket text-xl" />
               </div>
               <h3 className="text-3xl font-semibold">A growing company</h3>
@@ -36,7 +36,7 @@ const Recyclage = () => {
                 <li className="py-2">
                   <div className="flex items-center">
                     <div>
-                      <span className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-pink-200 mr-3">
+                      <span className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-green-600 bg-green-200 mr-3">
                         <i className="fas fa-fingerprint" />
                       </span>
                     </div>
@@ -50,7 +50,7 @@ const Recyclage = () => {
                 <li className="py-2">
                   <div className="flex items-center">
                     <div>
-                      <span className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-pink-200 mr-3">
+                      <span className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-green-600 bg-green-200 mr-3">
                         <i className="fab fa-html5" />
                       </span>
                     </div>
@@ -64,7 +64,7 @@ const Recyclage = () => {
                 <li className="py-2">
                   <div className="flex items-center">
                     <div>
-                      <span className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-pink-200 mr-3">
+                      <span className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-green-600 bg-green-200 mr-3">
                         <i className="far fa-paper-plane" />
                       </span>
                     </div>
@@ -77,34 +77,6 @@ const Recyclage = () => {
             </div>
           </div>
         </div>
-        <footer className="relative  pt-8 pb-6 mt-8">
-          <div className="container mx-auto px-4">
-            <div className="flex flex-wrap items-center md:justify-between justify-center">
-              <div className="w-full md:w-6/12 px-4 mx-auto text-center">
-                <div className="text-sm text-blueGray-500 font-semibold py-1">
-                  Made with{" "}
-                  <a
-                    href="https://www.creative-tim.com/product/notus-js"
-                    className="text-blueGray-500 hover:text-gray-800"
-                    target="_blank"
-                  >
-                    Notus JS
-                  </a>{" "}
-                  by{" "}
-                  <a
-                    href="https://www.creative-tim.com"
-                    className="text-blueGray-500 hover:text-blueGray-800"
-                    target="_blank"
-                  >
-                    {" "}
-                    Creative Tim
-                  </a>
-                  .
-                </div>
-              </div>
-            </div>
-          </div>
-        </footer>
       </section>
     </PageLayout>
   );

@@ -1,17 +1,18 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import logoGreen from "../assets/images/icons/logo-green.svg";
 
-const Logo = () => {
+const Logo = ({ logoStyle }) => {
   return (
-    <a
-      href="#"
+    <Link
+      to="/"
       className="nav-icon"
       aria-label="visit homepage"
       aria-current="page"
     >
       <img src={logoGreen} alt="Logo Wastes Transformation" />
-      <span>W-Trans</span>
-    </a>
+      <span style={logoStyle}>W-Trans</span>
+    </Link>
   );
 };
 
