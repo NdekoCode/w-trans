@@ -1,10 +1,8 @@
 import React from "react";
-import PageLayout from "../components/PageLayout";
 
-const About = () => {
+const OtherSection = () => {
   return (
-    <PageLayout>
-      <h1>A propos de nous</h1>
+    <section>
       <section className="text-blueGray-700 bg-white mt-20">
         <div className="container flex flex-col items-center px-5 py-16 mx-auto md:flex-row lg:px-28">
           <div className="flex flex-col items-start mb-16 text-left lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 md:mb-0">
@@ -89,7 +87,7 @@ const About = () => {
       </section>
 
       {/* faq block */}
-      <div className="relative pb-12 overflow-hidden bg-gray-900 lg:pb-20">
+      <section className="relative pb-12 overflow-hidden bg-gray-900 lg:pb-20">
         <div className="relative z-20 max-w-screen-xl px-6 mx-auto lg:px-8 xl:px-4">
           <div className="mb-6 text-center md:mb-8 lg:mb-12">
             <h2 className="mb-2 text-3xl font-bold text-white md:text-4xl lg:text-5xl md:mb-4">
@@ -307,10 +305,9 @@ const About = () => {
             </a>
           </div>
         </div>
-      </div>
-      {/*/ faq block */}
-    </PageLayout>
+      </section>
+    </section>
   );
 };
 
-export default About;
+export default OtherSection;
