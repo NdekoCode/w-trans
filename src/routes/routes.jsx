@@ -3,6 +3,7 @@ import LoadingPage from "../components/LoadingPage";
 import Login from "../pages/Login";
 import News from "../pages/News";
 import Project from "../pages/Project";
+import Register from "../pages/Register";
 const Contact = lazy(() => import("../pages/Contact"));
 const Home = lazy(() => import("../pages/Home"));
 
@@ -37,6 +38,11 @@ const routes = [
     element: <Login />,
   },
   {
+    path: "/register",
+    name: "Se connecter",
+    element: <Register />,
+  },
+  {
     path: "/news",
     name: "Actualités",
     element: <News />,
@@ -60,26 +66,46 @@ export const navbarRouter = [
   {
     path: "/news",
     name: "Actualités",
-    element: <News />,
+    element: (
+      <Suspense fallback={<LoadingPage />}>
+        <News />
+      </Suspense>
+    ),
   },
   {
     path: "/projets",
     name: "Projet",
-    element: <Project />,
+    element: (
+      <Suspense fallback={<LoadingPage />}>
+        <Project />
+      </Suspense>
+    ),
   },
   {
     path: "/services",
     name: "Services",
-    element: <Project />,
+    element: (
+      <Suspense fallback={<LoadingPage />}>
+        <Project />
+      </Suspense>
+    ),
   },
   {
     path: "/contact",
     name: "Contact",
-    element: <Contact />,
+    element: (
+      <Suspense fallback={<LoadingPage />}>
+        <Contact />
+      </Suspense>
+    ),
   },
   {
     path: "Actualités",
-    element: <News />,
+    element: (
+      <Suspense fallback={<LoadingPage />}>
+        <News />
+      </Suspense>
+    ),
   },
 ];
 export default routes;
