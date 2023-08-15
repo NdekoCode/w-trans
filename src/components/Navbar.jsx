@@ -1,7 +1,7 @@
 import React, { useCallback, useState } from "react";
-import { NavLink, Link } from "react-router-dom";
-import { navbarRouter } from "../routes/routes";
+import { Link, NavLink } from "react-router-dom";
 import imgUser from "../assets/images/icons/user-light.svg";
+import { navbarRouter } from "../routes/routes";
 import Logo from "./Logo";
 import SubLinks from "./SubLinks";
 const Navbar = ({ logoStyle }) => {
@@ -17,8 +17,6 @@ const Navbar = ({ logoStyle }) => {
     mobileMenu.classList.toggle("open");
     target.classList.toggle("open");
 
-    console.log(mobileMenu);
-    console.log(target);
     new ResizeObserver((entries) => {
       if (entries[0].contentRect.width <= 900) {
         if (mobileMenu !== null) {

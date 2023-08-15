@@ -17,21 +17,19 @@ const Login = () => {
             </div>
             <div className="space-y-5">
               <h1 className="lg:text-3xl title-3 xl:text-5xl xl:leading-snug font-extrabold text-white">
-                Entrez dans votre compte et contribuer à notre environnement
+                Créer votre compte et contribuer à environnement
               </h1>
-              <p className="text-lg text-white-light">
-                Vous n'avez pas de compte ?
-              </p>
+              <p className="text-lg text-white-light">Vous avez un compte ?</p>
               <Link
-                to="/register"
+                to="/login"
                 className="inline-block flex-none px-4 py-3 border-2 rounded-lg font-medium btn btn-primary text-white"
               >
-                Créer un compte ici
+                Connectez-vous ici
               </Link>
             </div>
-            <p className="font-medium">© 2022 Wastes Transformation</p>
+            <p className="font-medium">© 2023 Wastes Transformation</p>
           </div>
-          {/* Login */}
+          {/* Signup */}
           <div className="flex flex-1 flex-col items-center my-auto justify-center px-10 relative">
             <div className="flex lg:hidden justify-between items-center w-full py-4">
               <div className="flex items-center justify-start space-x-3">
@@ -41,12 +39,12 @@ const Login = () => {
                 </a>
               </div>
               <div className="flex items-center space-x-2">
-                <span>Pas un membre ?</span>
+                <span>Déjà un membre ?</span>
                 <Link
-                  to="/register"
+                  to="/login"
                   className="underline font-medium text-[#070eff]"
                 >
-                  S'inscrire maintenant
+                  Connectez-vous maintenant
                 </Link>
               </div>
             </div>
@@ -54,7 +52,7 @@ const Login = () => {
             <div className="flex flex-1 flex-col  justify-center space-y-5 max-w-md mt-10">
               <div className="flex flex-col space-y-2 text-center">
                 <h2 className="text-3xl md:text-4xl font-bold">
-                  Connectez-vous au compte
+                  Créer votre compte
                 </h2>
                 <p className="text-md md:text-xl">
                   Inscrivez-vous ou connectez-vous pour commencer !
@@ -72,6 +70,13 @@ const Login = () => {
                   <input
                     type="password"
                     placeholder="Mot de passe"
+                    className="w-full flex px-3 py-2 md:px-4 md:py-3 border-2 border-black rounded-lg font-medium placeholder:font-normal"
+                  />
+                </div>
+                <div className="w-full">
+                  <input
+                    type="password"
+                    placeholder="Confirmer le mot de passe"
                     className="w-full flex px-3 py-2 md:px-4 md:py-3 border-2 border-black rounded-lg font-medium placeholder:font-normal"
                   />
                 </div>
@@ -110,7 +115,7 @@ const Login = () => {
                       />
                     </svg>
                   </span>
-                  <span>Connectez-vous avec Google</span>
+                  <span>S'inscrire avec Google</span>
                 </button>
               </form>
             </div>
